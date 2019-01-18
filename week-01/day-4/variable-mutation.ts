@@ -59,7 +59,8 @@ let j: number = 1521;
 let m = j%3
 if (m > 0) {
     console.log("1521 is not divisible by 3");
-    else
+}
+    else {
     console.log("1521 is divisible by 3");
 } 
 
@@ -67,7 +68,8 @@ let n = j%5
 if (n>0) {
 
     console.log("1521 is not divisible by 5");
-    else
+}
+    else {
     console.log("1521 is divisible by 5");
 }
 

@@ -20,3 +20,11 @@ console.log("...the dimension of the cuboid is: ", a )
 
 //---------------------------------------------------------------------------------
 
+console.log("-----------------------------------------------------------------")
+
+let e:number= 1.789
+let f:number= 5.123
+let g:number= 2.6987
+
+console.log("Surface Area: ", 2*(e*f+f*g+g*e))
+console.log("Volume: ", e*f*g)

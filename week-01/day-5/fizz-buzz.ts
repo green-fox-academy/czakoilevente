@@ -8,9 +8,9 @@
 let num: number = 1
 
 for (num; num <= 100; num++) {
-    if (num % 3 == 0 && num % 5 == 0) {
+    if (num % 3==0 && num % 5 == 0) {
         console.log("FizzBuzz")
-    } else if (num % 3 == 0) {
+    }else     if (num % 3 == 0) {
         console.log("Fizz");
     } else if (num % 5 == 0) {
         console.log("Buzz");

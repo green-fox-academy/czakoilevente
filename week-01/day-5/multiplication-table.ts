@@ -32,4 +32,12 @@ let number: number = 15;
     console.log("9 * ", number, " = ", 9*number)
     console.log("10 * ", number, " = ", 10*number)
 
+//----------------------------------------------------
+
+let g = 10
+let i
+
+for (i=1; i<=g; i++) {
+    console.log(i, " * ", number, " = ", i*number)
+}
 

@@ -4,7 +4,7 @@
 //     -  Prepare for the special case when no parameters are given
 // -  Greet `name`
 
-let namee = "Greenfox";
+let namee :string = "Greenfox";
 
 
 function greet(x: string) {
@@ -13,3 +13,4 @@ function greet(x: string) {
 }
 
 console.log(greet(namee));
+console.log(greet("Jozsi"))

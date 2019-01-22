@@ -20,10 +20,12 @@ let c
 for (a; a <= lineCount; a++) {
     b += ("*")
     c += (" ")
-
+    
 }
+/*
 for ()
 
 for()
+*/
 
 (a-1)*2+1 //max *  száma

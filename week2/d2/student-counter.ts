@@ -47,7 +47,7 @@ let ageCount: number = 0
 students.forEach(
   function (person){
     if (person.candies < 5)
-       ageCount = ageCount + person.age 
+    ageCount = ageCount + person.age 
   }  
 );
 console.log("Count of ages will be: " + ageCount)

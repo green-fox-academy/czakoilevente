@@ -20,18 +20,25 @@ const students: any[] = [
 
 // function countNames(x: any)
 
-students.forEach(students.keys) {
-  function candyCount(){
-    //add all the candies
-    return x
-  }
-
-  let candyList = x
-}
-
+let candyCount: number = 0                      //
+                                                                                                
+students.forEach(                               // <- 
+  function (person){                            //   
+   //console.log(person.candies)                //   
+    candyCount = candyCount + person.candies    //
+  },                                            //
+);                                              //
+                                                
+console.log(candyCount);                        // 
 
 // let keyArr = students.keys().split(",").length
-
 // for -> összeszámolni hányszor fut let a loop
+
+let nameList = ""
+
+students.forEach(
+  function (person) {
+  nameList = nameList + person.name}
+);
 
 

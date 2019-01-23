@@ -21,7 +21,11 @@ function drawLine(x, y) {
 };
 
 
-drawLine(56,56);
-drawLine(40,46);
-drawLine(89,90);
+// drawLine(56,56);
+// drawLine(40,46);
+// drawLine(89,90);
+
+for (let i = 1; i < 4; i++) {
+    drawLine(100 * i, i * 100)
+};
 

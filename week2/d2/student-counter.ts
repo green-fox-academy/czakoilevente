@@ -1,7 +1,9 @@
 'use strict';
 
 const students: any[] = [
-  {name: 'Theodor', age: 3, candies: 2},
+  { name:    'Theodor', 
+    age:     3, 
+    candies: 2},
   {name: 'Paul', age: 9.5, candies: 2},
   {name: 'Mark', age: 12, candies: 5},
   {name: 'Peter', age: 7, candies: 3},
@@ -18,7 +20,15 @@ const students: any[] = [
 
 // function countNames(x: any)
 
-for ();
+students.forEach(students.keys) {
+  function candyCount(){
+    //add all the candies
+    return x
+  }
+
+  let candyList = x
+}
+
 
 // let keyArr = students.keys().split(",").length
 

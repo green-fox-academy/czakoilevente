@@ -9,12 +9,13 @@ const ctx = canvas.getContext('2d');
 // draw a green vertical line to the canvas' middle.
 
 ctx.beginPath();
-ctx.fillStyle = black;
-ctx.moveTo(200, 100);
-ctx.lineTo(400, 100);
+ctx.strokeStyle = 'red';
+ctx.moveTo(200, 200);
+ctx.lineTo(400, 200);
 ctx.stroke();
 
-ctx.fillStyle = black;
-ctx.moveTo(50, 100);
-ctx.lineTo(50, 300);
+ctx.beginPath();
+ctx.strokeStyle = 'green';
+ctx.moveTo(300, 100);
+ctx.lineTo(300, 300);
 ctx.stroke();

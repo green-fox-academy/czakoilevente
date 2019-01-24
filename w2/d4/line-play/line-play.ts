@@ -13,16 +13,20 @@ let y1 = 0;   //<- állandó
 let x2 = 10;  //<- állandó
 let y2 = 1;
 
-for (let k = 1; k < 11; k++) {
+let t = 10      // <- vonalak sűrűsége
 
-}
 
+function drawLine(x1, y2) {
 ctx.strokeStyle = 'purple';
 ctx.beginPath();
 ctx.moveTo(tr * x1, tr * 0);
 ctx.lineTo(tr * 10, tr * y2);
 ctx.stroke();
+}
 
+for (let k = 1; k < 11; k++) {
+    drawLine(1+k, k)
+};
 
 
 

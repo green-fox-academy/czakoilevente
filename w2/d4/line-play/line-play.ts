@@ -5,7 +5,9 @@ const ctx = canvas.getContext('2d');
 
 //--------------------------------------------------------------------------------------
 
-let tr = 100;
+let tr = 100;  //<- mérethez alakító szorzó
+let t = 10;      // <- vonalak sűrűsége
+
 
 let x1 = 1;
 let y1 = 0;   //<- állandó
@@ -13,7 +15,6 @@ let y1 = 0;   //<- állandó
 let x2 = 10;  //<- állandó
 let y2 = 1;
 
-let t = 10      // <- vonalak sűrűsége
 
 
 function drawLine(x1, y2) {
@@ -36,3 +37,17 @@ for (let k = 1; k < 11; k++) {
 // line1 y1      =   line1 x2 
 
 
+
+
+
+function drawLine2(x2, y1) {
+    ctx.strokeStyle = 'green';
+    ctx.beginPath();
+    ctx.moveTo(tr * 0, tr * y1);
+    ctx.lineTo(tr * x2, tr * 10);
+    ctx.stroke();
+    }
+
+    for (let k = 1; k < 11; k++) {
+        drawLine2(-1+k, k)
+    };

@@ -18,11 +18,11 @@ let y2 = 1;
 
 
 function drawLine(x1, y2) {
-ctx.strokeStyle = 'purple';
-ctx.beginPath();
-ctx.moveTo(tr * x1, tr * 0);
-ctx.lineTo(tr * 10, tr * y2);
-ctx.stroke();
+    ctx.strokeStyle = 'purple';
+    ctx.beginPath();
+    ctx.moveTo(tr * x1, tr * 0);
+    ctx.lineTo(tr * 10, tr * y2);
+    ctx.stroke();
 }
 
 for (let k = 1; k < 11; k++) {
@@ -46,8 +46,8 @@ function drawLine2(x2, y1) {
     ctx.moveTo(tr * 0, tr * y1);
     ctx.lineTo(tr * x2, tr * 10);
     ctx.stroke();
-    }
+}
 
-    for (let k = 1; k < t+1; k++) {
-        drawLine2(k, k)
-    };
+for (let k = 1; k < t + 1; k++) {
+    drawLine2(k, k)
+};

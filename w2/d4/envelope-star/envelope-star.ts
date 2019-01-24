@@ -14,6 +14,7 @@ let y1 = 0;   //<- állandó
 let x2 = 10;  //<- állandó
 let y2 = 1; */
 
+/*
 let x = 1;
 
 
@@ -33,6 +34,21 @@ for (let k = 1; k < 11; k++) {
 // line2 x1+10   =   line2 y2+10+10
 // line1 y1      =   line1 x2 
 
+function drawLine2(x) {
+    ctx.strokeStyle = 'purple';
+    ctx.beginPath();
+    ctx.moveTo(tr * x , tr * 0 * x +500);
+    ctx.lineTo(tr * 10 * x , tr * x );
+    ctx.stroke();
+}
+
+for (let k = 1; k < 11; k++) {
+    drawLine2(k)
+};
+
+*/
+
+
 
 /* function drawLine2(x2, y1) {
     ctx.strokeStyle = 'green';
@@ -45,3 +61,28 @@ for (let k = 1; k < 11; k++) {
 for (let k = 1; k < t + 1; k++) {
     drawLine2(k, k)
 }; */
+
+
+//------------------------------------------------
+
+
+
+let N: number = 10;
+let W: number = 1000;
+let H: number = 1000;
+
+
+
+function drawLine3(x1, y1, x2, y2) {
+    ctx.strokeStyle = 'purple';
+    ctx.beginPath();
+    ctx.moveTo(x1 , y1);
+    ctx.lineTo(x2, y2);
+    ctx.stroke();
+}
+for (let k = 1; k < N+1; k++) {
+    drawLine3(W/N*k,0,W,H/N*k);
+    drawLine3(0,k*H/N,k*W/N,H);
+    drawLine3(,,,);
+};
+

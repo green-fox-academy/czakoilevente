@@ -20,8 +20,8 @@ let x = 1;
 function drawLine(x) {
     ctx.strokeStyle = 'purple';
     ctx.beginPath();
-    ctx.moveTo(tr * x, tr * 0 * x);
-    ctx.lineTo(tr * 10 , tr * x );
+    ctx.moveTo(tr * x , tr * 0 * x +500);
+    ctx.lineTo(tr * 10 , tr * x +500);
     ctx.stroke();
 }
 

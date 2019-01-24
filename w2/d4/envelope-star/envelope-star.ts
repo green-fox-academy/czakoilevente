@@ -76,13 +76,14 @@ let H: number = 1000;
 function drawLine3(x1, y1, x2, y2) {
     ctx.strokeStyle = 'purple';
     ctx.beginPath();
-    ctx.moveTo(x1 , y1);
+    ctx.moveTo(x1, y1);
     ctx.lineTo(x2, y2);
     ctx.stroke();
 }
-for (let k = 1; k < N+1; k++) {
-    drawLine3(W/N*k,0,W,H/N*k);
-    drawLine3(0,k*H/N,k*W/N,H);
-    drawLine3(,,,);
+for (let k = 1; k < N + 1; k++) {
+    drawLine3((W/N*k)+(H/2),  0+(H/2),    (W)-(W/2),     (H/N*k)-(W/2));
+    //drawLine3(0+(H/2),(k*H/N)+(H/2),(k*W/N)-(W/2),(H)-(W/2));
+    //
+    drawLine3((W / 2 / N * k), 0 + (H / 2), (W / 2), (H / N * k) + (H / 2));
 };
 

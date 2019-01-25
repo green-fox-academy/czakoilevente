@@ -67,7 +67,7 @@ for (let k = 1; k < t + 1; k++) {
 
 
 
-let N: number = 10;
+let N: number = 50;
 let W: number = 1000;
 let H: number = 1000;
 
@@ -81,10 +81,10 @@ function drawLine3(x1, y1, x2, y2) {
     ctx.stroke();
 }
 for (let k = 1; k < N + 1; k++) {
-    drawLine3((W / 2 / N * k), 0 + (H / 2), (W / 2), (H / 2 / N * k) + (H / 2));
-    drawLine3(0 + (W / 2), (H / N * k) / 2, (W / N * k) / 2 + (W / 2), (H) - (H / 2));
-    drawLine3((W / 2 / N * k), H - (H/2), W / 2, (H-H/N*k)/2 );
-    drawLine3(  0 , (H-H/N*k)     ,  (W/N*k)     , 0      )
+    drawLine3( W/2/N*k , (H/2)       , (W/2)             , (H/2/N*k) + (H/2));
+    drawLine3( W/2     , (H/2/N*k)   , (W/2/N*k) + (W/2) , (H) - (H/2));
+    drawLine3( W/2/N*k , H-(H/2)     , (W/2)             , (H-H/N*k)/2 );
+    drawLine3( W/2     , (H-H/2/N*k) , (W/2) + (W/2/N*k) , H/2 )
 };
 
 

@@ -5,7 +5,7 @@ const ctx = canvas.getContext('2d');
 
 //--------------- dont touch over this line
 
-let tr = 50;  //<- mérethez alakító szorzó
+// let tr = 50;  //<- mérethez alakító szorzó
 //let t = 10;      // <- vonalak sűrűsége akar lenni
 
 /* let x1 = 1;
@@ -67,24 +67,24 @@ for (let k = 1; k < t + 1; k++) {
 
 
 
-let N: number = 100;
-let W: number = 1000;
-let H: number = 1000;
 
+let NumberOfLines: number = 99;
+let Width: number = 1000;
+let Height: number = 1000;
 
-
-function drawLine3(x1, y1, x2, y2) {
+function drawLine3(x1: number, y1:number, x2: number, y2: number) {
     ctx.strokeStyle = 'purple';
     ctx.beginPath();
     ctx.moveTo(x1, y1);
     ctx.lineTo(x2, y2);
     ctx.stroke();
 }
-for (let k = 0; k < N + 1; k++) {
-    drawLine3( W/2/N*k , (H/2)       , (W/2)             , (H/2/N*k) + (H/2));
-    drawLine3( W/2     , (H/2/N*k)   , (W/2/N*k) + (W/2) , H - (H/2));
-    drawLine3( W/2/N*k , H-(H/2)     , (W/2)             , (H-H/N*k)/2 );
-    drawLine3( W/2     , (H-H/2/N*k) , (W/2) + (W/2/N*k) , H/2 )
+for (let k = 0; k < NumberOfLines + 1; k++) {
+
+    drawLine3( Width/2/NumberOfLines*k , (Height/2)                         , (Width/2)                             , (Height/2/NumberOfLines*k) + (Height/2));
+    drawLine3( Width/2                 , (Height/2/NumberOfLines*k)         , (Width/2/NumberOfLines*k) + (Width/2) , Height - (Height/2));
+    drawLine3( Width/2/NumberOfLines*k , Height-(Height/2)                  , (Width/2)                             , (Height-Height/NumberOfLines*k)/2 );
+    drawLine3( Width/2                 , (Height-Height/2/NumberOfLines*k)  , (Width/2) + (Width/2/NumberOfLines*k) , Height/2 )
 };
 
 

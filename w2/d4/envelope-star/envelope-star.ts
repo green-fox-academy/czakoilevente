@@ -82,9 +82,9 @@ function drawLine3(x1, y1, x2, y2) {
 }
 for (let k = 1; k < N + 1; k++) {
     drawLine3((W / 2 / N * k), 0 + (H / 2), (W / 2), (H / 2 / N * k) + (H / 2));
-    drawLine3(0 + (W / 2), (k * H / N) / 2, (k * W / N) / 2 + (W / 2), (H) - (H / 2));
+    drawLine3(0 + (W / 2), (H / N * k) / 2, (W / N * k) / 2 + (W / 2), (H) - (H / 2));
     drawLine3((W / 2 / N * k), H - (H/2), W / 2, (H-H/N*k)/2 );
-    drawLine3(      ,       ,       ,       )
+    drawLine3(  0 , (H-H/N*k)     ,  (W/N*k)     , 0      )
 };
 
 

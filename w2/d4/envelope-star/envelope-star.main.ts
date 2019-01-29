@@ -3,9 +3,9 @@
 const canvas = document.querySelector('.main-canvas') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d');
 
-let NumberOfLines: number = 50;
-let Width: number = 1000;
-let Height: number = 1000;
+let NumberOfLines: number = 100;
+let Width: number         = 1000;
+let Height: number        = 1000;
 
 function drawLine3(x1: number, y1:number, x2: number, y2: number) {
   ctx.strokeStyle = 'teal';

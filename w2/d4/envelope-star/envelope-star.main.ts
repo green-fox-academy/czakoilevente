@@ -3,7 +3,7 @@
 const canvas = document.querySelector('.main-canvas') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d');
 
-let NumberOfLines: number = 100;
+let NumberOfLines: number = 20;
 let Width: number         = 1000;
 let Height: number        = 1000;
 

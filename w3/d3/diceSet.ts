@@ -45,7 +45,6 @@ console.log('------------')
 
 
 console.log(diceSet.roll())
-
 for (let i=0; i < 6; i++){
     if (diceSet.dice[i]===6) {
     } else {

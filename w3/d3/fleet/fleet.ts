@@ -18,6 +18,7 @@ class Fleet {
   /* print(){
    console.log() 
   }; */
+  
 }
 
 export { Fleet };

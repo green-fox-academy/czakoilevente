@@ -22,14 +22,13 @@ class DiceSet {
   
   getCurrent(index?: number) {
       if(index == undefined) {
-          for(var i = 0; i < this.numOfDices; i++) { 
-              return this.dice[i];
-          }
+              return this.dice;
       } else {
           return this.dice[index];
       }        
   }
 }
+
 
 // You have a `DiceSet` class which has a list for 6 dice
 // You can roll all of them with roll()
@@ -38,9 +37,34 @@ class DiceSet {
 // Your task is to roll the dice until all of the dice are 6
 
 let diceSet = new DiceSet();
+//let dicesFinished: number[] = []
+
+console.log(diceSet)
+
+console.log('------------')
+
+
+console.log(diceSet.roll())
+
+for (let i=0; i < 6; i++){
+    if (diceSet.dice[i]===6) {
+    } else {
+        while (diceSet.dice[i]!==6) {
+            diceSet.reroll(i);
+        };
+    };
+    console.log('Number 6 rolled on Dice number: ' + (i+1))
+};
+
+console.log(diceSet);
+
+
+
+/*
 console.log(diceSet.roll());
 console.log(diceSet.getCurrent());
 
+/*
 console.log("------------------");
 
 diceSet.reroll();
@@ -55,4 +79,4 @@ console.log(diceSet.getCurrent());
 console.log("------------------");
 
 diceSet.reroll(4);
-console.log(diceSet.getCurrent());
+console.log(diceSet.getCurrent()); */

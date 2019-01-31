@@ -23,8 +23,6 @@ for (let i = 0; i < pokemonOfAsh.length; i++) {
   };
 };
 
-
-
 function initializePokemon(): Pokemon[] {
   return [
     new Pokemon('Balbasaur', 'leaf', 'water'),

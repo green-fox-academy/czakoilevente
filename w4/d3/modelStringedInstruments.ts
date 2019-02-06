@@ -11,14 +11,31 @@ but with the help of the sound() the play() method is fully implementable
 */
 
 abstract class Instrument {
-  private name: string;
+  protected name: string;
 
-  play(): void {};
+  abstract play();
 }; 
 
 abstract class StringedInstrument extends Instrument {
   numberOfStrings: number;
 
-  sound():void{};
-
+  abstract sound();  
 };
+
+
+class ElectricGuitar extends StringedInstrument{
+
+  play(){};
+  sound(){};
+  
+  constructor(stringsIN, playIN){
+    super()
+    this.numberOfStrings=stringsIN;
+    
+  };
+};
+
+let guitar = new ElectricGuitar;
+
+
+

@@ -13,11 +13,20 @@ Fix the returned value to make the test succeeding again */
 
 // SOLUTION OF THE TASK STARTS FROM HERE (above part is for self guiding)
 
-class Fruit {
-
+export class Fruit {
   getApple(){
     return 'apple'
   };
-
-
 };
+
+export class NumberOperations {
+  public addNum(num1: number, num2: number): number {
+    return num1 + num2;
+  }
+
+  public subtractNum(num1: number, num2: number): number {
+    return num1 + num2;
+  }
+}
+
+const obj1 = new Fruit();

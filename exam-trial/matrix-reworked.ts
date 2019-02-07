@@ -29,40 +29,42 @@ false
 */
 
 function isSymmetricc(matrix: number[][]) {
-/*matrix[0][0] === matrix[0][0];
-  matrix[0][1] === matrix[1][0];
-  matrix[0][2] === matrix[2][0];
+  /*matrix[0][0] === matrix[0][0];
+    matrix[0][1] === matrix[1][0];
+    matrix[0][2] === matrix[2][0];
 
-  matrix[1][0] === matrix[0][1];
-  matrix[1][1] === matrix[1][1];
-  matrix[1][2] === matrix[2][1];
+    matrix[1][0] === matrix[0][1];
+    matrix[1][1] === matrix[1][1];
+    matrix[1][2] === matrix[2][1];
 
-  matrix[2][0] === matrix[0][2];
-  matrix[2][1] === matrix[1][2];
-  matrix[2][2] === matrix[2][2]; */
+    matrix[2][0] === matrix[0][2];
+    matrix[2][1] === matrix[1][2];
+    matrix[2][2] === matrix[2][2]; */
 
-//matrix[i][j] === matrix[i][j]
+  //matrix[i][j] === matrix[i][j]
 
-console.log(matrix);
-
-
-  for (let i = 0; i < matrix.length; i++) {
-    for (let j = 0; j < matrix.length; j++) {
-      if (matrix[i][j] === matrix[j][i]){
-        console.log('Symmetric!')
-      } else {console.log('Not symmetric!')}
+  console.log(matrix);
+  let result: boolean = true;
+  
+    for (let i = 0; i < matrix.length; i++) {
+      for (let j = 0; j < matrix.length; j++) {
+        if (matrix[i][j] !== matrix[j][i]){
+          result = false;
+          /*         console.log('Symmetric!')
+        } else {console.log('Not symmetric!')} */
+      };
     };
+    return result
   };
-  return true
 };
-
 
 isSymmetricc(example1);
 console.log('-------------------')
 isSymmetricc(example2);
 
 
-/* function isSymmetric(matrix: number[][]): void {
+/*
+ function isSymmetric(matrix: number[][]): void {
 
   matrix[0][0] === matrix[0][0]
   matrix[1][0] === matrix[0][1]
@@ -75,4 +77,5 @@ isSymmetricc(example2);
   matrix[0][2] === matrix[2][0]
   matrix[][] === matrix[][]
   matrix[][] === matrix[][]
-}; */
+};
+*/

@@ -1,5 +1,6 @@
 /* Sum
-Create a sum method in your class which has a list of integers as parameter
+Create a sum method in your class which has a list of
+integers as parameter.
 It should return the sum of the elements in the list
 Follow these steps:
 Add a new test case
@@ -18,13 +19,13 @@ Fix your code if needed */
 
 //SOLUTION OF TASK STARTS FROM HERE (above part is only for self guide)
 
-class myClass {
+export class MyClass {
   list: number[];
 
   sum(listIN: number[]): number {
-
     return listIN.reduce((accumulator, currentValue) => {
       return accumulator + currentValue;
     }, 0);
   };
 };
+

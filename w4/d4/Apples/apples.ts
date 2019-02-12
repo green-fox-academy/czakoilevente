@@ -1,11 +1,13 @@
 /* Apples
-Create a class with one method (eg. getApple()) that returns a string (eg. 'apple')
+Create a class with one method (eg. getApple()) that returns a string (eg. 
+  'apple')
 Create a test for that:
 Create a test method
 Instantiate an Object from your class in the method
 Use the t.equal()
 The expected parameter should be the same string (eg. 'apple')
-The actual parameter should be the return value of the method (eg. myobject.getApple())
+The actual parameter should be the return value of the method (eg.
+   myobject.getApple())
 Run the test
 Change the expected value to make the test failing
 Run the test
@@ -14,12 +16,12 @@ Fix the returned value to make the test succeeding again */
 // SOLUTION OF THE TASK STARTS FROM HERE (above part is for self guiding)
 
 export class Fruit {
-  getApple(){
+  getApple() {
     return 'apple'
   };
 };
 
-export class NumberOperations {
+/* export class NumberOperations {
   public addNum(num1: number, num2: number): number {
     return num1 + num2;
   }
@@ -27,6 +29,4 @@ export class NumberOperations {
   public subtractNum(num1: number, num2: number): number {
     return num1 + num2;
   }
-}
-
-const obj1 = new Fruit();
+} */

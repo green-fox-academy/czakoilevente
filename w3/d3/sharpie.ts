@@ -11,24 +11,29 @@
 
 'use strict'
 
-class Sharpie {
+export class Sharpie {
   color: string;
   width: number;
   inkAmount: number;
+  usable: boolean;
 
 
-constructor (colorIN, widthIN, inkAmountIN = 100){
-  this.color=colorIN;
-  this.width=widthIN;
-  this.inkAmount=inkAmountIN;
-};
+  constructor(usableIN: boolean = true, colorIN: string = 'white', widthIN: number = 10, inkAmountIN: number = 100) {
+    this.color = colorIN;
+    this.width = widthIN;
+    this.inkAmount = inkAmountIN;
+    this.usable = usableIN;
+  };
 
-  use(){
-   this.inkAmount -= 1;
+  use() {
+    this.inkAmount -= 1;
   };
 
 };
 
-const ABC = new Sharpie('blue',4);
+/* const ABC = new Sharpie(true,'blue', 4);
 
 console.log(ABC)
+ABC.use();
+console.log(ABC)
+ */

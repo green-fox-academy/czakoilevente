@@ -18,16 +18,16 @@ class Animal {
     this.thirst = thirstIN;
   };
 
-  eat(dog) {
+  eat() : void {
     this.hunger -= 1;
     dog.hunger -= 2;
   }
 
-  drink() {
+  drink() :void {
     this.thirst = this.thirst - 1;
   };
 
-  play(){
+  play() :void {
     this.thirst += 1;
     this.hunger +=1;
   };
@@ -36,3 +36,4 @@ class Animal {
 const dog = new Animal;
 const cat = new Animal;
 cat.eat
+

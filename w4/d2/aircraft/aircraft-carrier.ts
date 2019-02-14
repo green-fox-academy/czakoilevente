@@ -1,5 +1,6 @@
 
 abstract class Aircraft {
+
   totalDamage: number;
   maxAmmo: number;
   baseDamage: number;
@@ -21,11 +22,12 @@ abstract class Aircraft {
   refill(ammoFilled: number): number {
     let ammoTemp: number = this.currentAmmo + ammoFilled;
     this.currentAmmo = ammoTemp;
+
     if (this.currentAmmo > this.maxAmmo) {
       this.currentAmmo = this.maxAmmo;
     };
+    this.totalDamage = this.currentAmmo * this.baseDamage;
     return ammoTemp - this.currentAmmo;
-    
   };
 
   abstract getType(): string;
@@ -33,7 +35,6 @@ abstract class Aircraft {
   abstract getStatus(): string;
 
   abstract isPriority(): boolean;
-
 };
 
 class F16 extends Aircraft {
@@ -56,7 +57,6 @@ class F16 extends Aircraft {
   };
 };
 
-
 class F35 extends Aircraft {
 
   constructor(maxAmmoIN: number = 12, baseDamageIN: number = 50, currentAmmoIN: number = 0, priorityIN: boolean = true) {
@@ -78,7 +78,6 @@ class F35 extends Aircraft {
   };
 };
 
-
 class Carrier {
 
   listOfAircrafts: Aircraft[] = [];
@@ -86,7 +85,7 @@ class Carrier {
   healthPointCarrier: number;
   totalCarrierDamage: number;
 
-  constructor(healthPointCarrierIN: number = 2000, carrierAmmoIN: number = 2000) {
+  constructor(healthPointCarrierIN: number = 2000, carrierAmmoIN: number = 200000) {
     this.healthPointCarrier = healthPointCarrierIN;
     this.carrierAmmoStorage = carrierAmmoIN;
   };
@@ -103,23 +102,46 @@ class Carrier {
     this.listOfAircrafts.push(newAircraft);
   };
 
-  fill(someAircraft: Aircraft): void {
-    if (this.carrierAmmoStorage < someAircraft.currentAmmo) {
-      someAircraft.priority = true;
-      someAircraft.refill(someAircraft.maxAmmo);
-      this.carrierAmmoStorage -= someAircraft.maxAmmo;
-    } else {
-      console.log('This Carrier\'s ammo storage has run dry. RUN FOR YOUR LIVES!')
-    };
+  totalAmmoRequiredForFill(): number {
+    let allCurrAmmo = this.listOfAircrafts.reduce((accumulator: number, oneAircraft: Aircraft): number => {
+      return accumulator + oneAircraft.currentAmmo;
+    }, 0);
+    let allRequiredAmmoForFill = this.listOfAircrafts.reduce((accumulator: number, oneAircraft: Aircraft): number => {
+      return accumulator + oneAircraft.maxAmmo;
+    }, 0);
+    return allRequiredAmmoForFill - allCurrAmmo;
   };
 
-  refillAllBirds(): void {
-    
-    this.listOfAircrafts.forEach((oneAircraft: Aircraft) => oneAircraft.refill(50));
-    //this.listOfAircrafts.forEach((oneAircraft: Aircraft) => oneAircraft.totalDamage = ));
-    
-    this.totalCarrierDamage = this.totalBaseDamage() * this.totalAircraftAmmo();
-  }; 
+  fill(): void {
+
+    /*if (this.totalAmmoRequiredForFill() > this.carrierAmmoStorage) {
+     this.listOfAircrafts.forEach((aircraft: Aircraft) => {
+       if (aircraft.priority === true) {
+         this.carrierAmmoStorage -= aircraft.refill(this.carrierAmmoStorage)
+       };
+     });
+     this.listOfAircrafts.forEach((aircraft: Aircraft) => {
+       if (aircraft.priority === false) {
+         this.carrierAmmoStorage -= aircraft.refill(this.carrierAmmoStorage)
+       };
+     });
+     };
+    */
+    try {
+/*       if (this.totalAmmoRequiredForFill() > this.carrierAmmoStorage) {
+        this.listOfAircrafts.sort((a: Aircraft, b: Aircraft) => a.priority - b.priority)
+      };
+ */
+      this.listOfAircrafts.forEach((oneAircraft: Aircraft): void => {
+        this.carrierAmmoStorage = oneAircraft.refill(this.carrierAmmoStorage);
+      });
+
+      this.totalCarrierDamage = this.totalBaseDamage() * this.totalAircraftAmmo();
+    }
+    catch (error) {
+      console.error(error);
+    };
+  };
 
   private totalBaseDamage(): number {
     return this.listOfAircrafts.reduce((accumulator: number, oneAircraft: Aircraft): number => accumulator + oneAircraft.baseDamage, 0);
@@ -130,11 +152,11 @@ class Carrier {
   };
 
   fight(anotherCarrier: Carrier): void {
-    //total damage of a carrier
-    /* 
-    how many f16s and f35-s are on the carrier
-    reduce -> add total basedamage
-    */
+    if (anotherCarrier.healthPointCarrier - this.totalCarrierDamage > 0) {
+      console.log('Good hit, but enemy still lives!')
+    } else {
+      console.log('E N E M Y   D E F E A T E D !')
+    };
   };
 
   getStatus(): void {
@@ -154,19 +176,23 @@ class Carrier {
 
 function testMyCarrier() {
   let myCarrier1 = new Carrier();
+  let myCarrier2 = new Carrier();
 
-  for (let i: number = 0; i < 1; i++) {
+  for (let i: number = 0; i < 2; i++) {
     let brandNewF35 = new F35();
     myCarrier1.add(brandNewF35);
     let brandNewF16 = new F16();
     myCarrier1.add(brandNewF16);
   };
 
-  myCarrier1.refillAllBirds();
+  myCarrier1.fill();
   console.log('---------------------------------------------------------------');
   console.log(myCarrier1.totalCarrierDamage);
   console.log('---------------------------------------------------------------');
   myCarrier1.getStatus();
+  console.log('---------------------------------------------------------------');
+
+  myCarrier1.fight(myCarrier2)
 };
 
 testMyCarrier();

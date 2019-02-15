@@ -1,3 +1,4 @@
+'use strict';
 
 abstract class Aircraft {
 
@@ -85,7 +86,7 @@ class Carrier {
   healthPointCarrier: number;
   totalCarrierDamage: number;
 
-  constructor(healthPointCarrierIN: number = 2000, carrierAmmoIN: number = 200000) {
+  constructor(healthPointCarrierIN: number = 2000, carrierAmmoIN: number = 20000) {
     this.healthPointCarrier = healthPointCarrierIN;
     this.carrierAmmoStorage = carrierAmmoIN;
   };
@@ -113,34 +114,36 @@ class Carrier {
   };
 
   fill(): void {
-
-    /*if (this.totalAmmoRequiredForFill() > this.carrierAmmoStorage) {
-     this.listOfAircrafts.forEach((aircraft: Aircraft) => {
-       if (aircraft.priority === true) {
-         this.carrierAmmoStorage -= aircraft.refill(this.carrierAmmoStorage)
-       };
-     });
-     this.listOfAircrafts.forEach((aircraft: Aircraft) => {
-       if (aircraft.priority === false) {
-         this.carrierAmmoStorage -= aircraft.refill(this.carrierAmmoStorage)
-       };
-     });
-     };
-    */
-    try {
-/*       if (this.totalAmmoRequiredForFill() > this.carrierAmmoStorage) {
-        this.listOfAircrafts.sort((a: Aircraft, b: Aircraft) => a.priority - b.priority)
+    /* 
+    this.listOfAircrafts.forEach((aircraft: Aircraft) => {
+      if (aircraft.priority === true) {
+        this.carrierAmmoStorage = aircraft.refill(this.carrierAmmoStorage)
       };
- */
-      this.listOfAircrafts.forEach((oneAircraft: Aircraft): void => {
-        this.carrierAmmoStorage = oneAircraft.refill(this.carrierAmmoStorage);
-      });
+    });
+    this.listOfAircrafts.forEach((aircraft: Aircraft) => {
+      if (aircraft.priority === false) {
+        this.carrierAmmoStorage = aircraft.refill(this.carrierAmmoStorage)
+      };
+    });
+    */  
 
-      this.totalCarrierDamage = this.totalBaseDamage() * this.totalAircraftAmmo();
-    }
-    catch (error) {
-      console.error(error);
+    if (this.carrierAmmoStorage === 0) {
+      throw 'No ammo !';
     };
+
+    if (this.totalAmmoRequiredForFill() > this.carrierAmmoStorage) {
+      this.listOfAircrafts.sort((a: Aircraft, b: Aircraft) => {
+        if (a.priority === true && b.priority === false) return -1;
+        if (a.priority === false && b.priority === true) return 1;
+        return 0;
+      });
+    };
+
+    this.listOfAircrafts.forEach((oneAircraft: Aircraft): void => {
+      this.carrierAmmoStorage = oneAircraft.refill(this.carrierAmmoStorage);
+    });
+
+    this.totalCarrierDamage = this.totalBaseDamage() * this.totalAircraftAmmo();
   };
 
   private totalBaseDamage(): number {
@@ -153,9 +156,9 @@ class Carrier {
 
   fight(anotherCarrier: Carrier): void {
     if (anotherCarrier.healthPointCarrier - this.totalCarrierDamage > 0) {
-      console.log('Good hit, but enemy still lives!')
+      console.log('Good hit, but enemy still lives!');
     } else {
-      console.log('E N E M Y   D E F E A T E D !')
+      console.log('E N E M Y   D E F E A T E D !');
     };
   };
 
@@ -185,7 +188,14 @@ function testMyCarrier() {
     myCarrier1.add(brandNewF16);
   };
 
-  myCarrier1.fill();
+
+  try {
+    myCarrier1.fill();
+  }
+  catch(error) {
+    console.error(error);
+  };
+  
   console.log('---------------------------------------------------------------');
   console.log(myCarrier1.totalCarrierDamage);
   console.log('---------------------------------------------------------------');

@@ -4,10 +4,10 @@
 
 let animals: string[] = ["koal", "pand", "zebr"];
 
-function addElement(oneArray: string[]): string[] {
-  
+/* function addElement(oneArray: string[]): string[] {
   for (let i: number = 0; i < oneArray.length; i++) {
-
     return oneArray.concat();
   };
-}
+} */
+
+console.log(animals.map((element: string) => element + "a"));

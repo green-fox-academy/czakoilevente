@@ -1,6 +1,6 @@
 
 
-let numList: number[] = [1, 2, 3, 8, 5, 6];
+let nummList: number[] = [1, 2, 3, 8, 5, 6];
 
 function changeElement(oneArray: number[]): number[] {
   return oneArray.map((element: number): number => {

@@ -5,9 +5,17 @@
 
 let ai: number[] = [3, 4, 5, 6, 7];
 
+//========== solution with reduce ========
+
 function sumAll(oneArr: number[]): number {
   let arrToSum: number[] = oneArr;
   return arrToSum.reduce((a, b) => a + b);
 };
 
 console.log(sumAll(ai));
+
+//=============== solution with foreach =========
+
+let sum: number = 0;
+ai.forEach((element: number) => sum + element );
+console.log(sum);

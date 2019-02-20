@@ -3,3 +3,7 @@
 // It should print: ['GinGin', 'WhiskeyWhiskey', 'WineWine', 'BeerBeer']`
 
 'use strict'
+
+let drinks : string[] = ['Gin', 'Whiskey', 'Wine', 'Beer'];
+
+console.log(drinks.map((elem:string) => elem + elem));

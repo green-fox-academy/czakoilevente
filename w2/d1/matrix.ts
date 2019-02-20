@@ -13,3 +13,21 @@
 
 'use strict'
 
+let arrSize: number = 4;
+
+function diagArrDraw(oneNum: number): number[] {
+  let finalArr: number[] = [];
+  for (let i: number = 0; i < oneNum; i++) {
+    let row: number[] = [];
+    for (let j: number = 0; j < oneNum; j++) {
+      if (row[j] = oneNum - i) {
+        row.push(1)
+      } else {
+        row.push(0)
+      };
+    };
+
+  };
+  return finalArr;
+};
+

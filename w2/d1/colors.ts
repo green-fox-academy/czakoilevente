@@ -11,7 +11,12 @@
 
 let colors = []
 
-console.log(colors[0])
-console.log(colors[1])
-console.log(colors[2])
+let greenShades: string[] = ["lime", "forest green", "olive", "pale green", "spring green"];
+let redShades: string[] = ["orange red", "red", "tomato"];
+let pinkShades: string[] = ["orchid", "violet", "pink", "hot pink"];
 
+colors.push(greenShades, redShades, pinkShades);
+
+console.log(colors[0]);
+console.log(colors[1]);
+console.log(colors[2]);

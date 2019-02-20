@@ -3,3 +3,11 @@
 
 'use strict'
 
+let ai: number[] = [3, 4, 5, 6, 7];
+
+function sumAll(oneArr: number[]): number {
+  let arrToSum: number[] = oneArr;
+  return arrToSum.reduce((a, b) => a + b);
+};
+
+console.log(sumAll(ai));

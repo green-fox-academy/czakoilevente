@@ -19,15 +19,14 @@ function diagArrDraw(oneNum: number): number[][] {
   for (let i: number = 0; i < oneNum; i++) {
     let row: number[] = [];
     for (let j: number = 0; j < oneNum; j++) {
-      if (row[j] === oneNum - 1 - i) {
+      if (j === oneNum - 1 - i) {
         row.push(1);
       } else {
         row.push(0);
       };
-      finalArr.push(row);
     };
+    finalArr.push(row);
   };
-
   return finalArr;
 };
 

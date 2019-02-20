@@ -7,6 +7,16 @@
 
 'use strict'
 
-let numList : number [] = [3, 4, 5, 6, 7];
+let numList: number[] = [3, 4, 5, 6, 7];
 
-console.log('Solution 1: '+ numList.reverse());
+//console.log('Solution 1: ' + numList.reverse());
+
+function reverseArr(oneArr: number[]): number[] {
+  let tempArr: number[] = [];
+  for (let i: number = 0; i < oneArr.length; i++) {
+    tempArr.push(oneArr[oneArr.length - 1 - i]);
+  };
+  return tempArr;
+};
+
+console.log('Solution 2: ' + reverseArr(numList));

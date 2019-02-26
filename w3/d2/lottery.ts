@@ -65,7 +65,7 @@ function find5MostCommonNumbers(oneFile: string) {
 
 
   console.log(`The 5 most common numbers are: ${lotNumsAndApp[0][0]}, ${lotNumsAndApp[1][0]},
-  ${lotNumsAndApp[2][0]}, ${lotNumsAndApp[3][0]}, ${lotNumsAndApp[4][0]}.`)
+  ${lotNumsAndApp[2][0]}, ${lotNumsAndApp[3][0]}, ${lotNumsAndApp[4][0]}.`);
 
 
 };

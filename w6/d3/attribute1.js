@@ -7,3 +7,6 @@ imgTag[0].setAttribute("src", "https://vigyelhaza.hu/wp-content/uploads/2016/06/
 let aTag = document.getElementsByTagName("a");
 aTag[0].setAttribute("href", "https://www.greenfoxacademy.com/");
 
+let secButton = document.getElementsByClassName("this-one");
+secButton[0].innerHTML = "Don't click me!";
+secButton[0].disabled = true;

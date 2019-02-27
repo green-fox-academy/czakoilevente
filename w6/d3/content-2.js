@@ -19,7 +19,7 @@ ulTag[0].setAttribute("class", "style");
 let styleTag = document.createElement("style");   
 //create empty styleTag: <style></style>
 styleTag.innerHTML = ".style{background-color: limegreen}"; 
-// <style>".style{background-color: limegreen}"</style>
+//puts <style>".style{background-color: limegreen}"</style>
 
 document.getElementsByTagName("body")[0].appendChild(styleTag);
 //puts styleTag into body 

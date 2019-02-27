@@ -15,3 +15,4 @@ console.log(pElemCont);
 for (let i = 0; i < pElemCont.length - 1; i++) {
   pElemCont[i].innerHTML += classContent[0].innerHTML;
 };
+// due to "last element" mentioned in task, "pElemCont.length - 1" can be used due to it being always the last element

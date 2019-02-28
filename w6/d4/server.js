@@ -5,11 +5,11 @@ const app = express();
 const PORT = 3000;
 
 
-app.use('/assets', express.static('assests'));
+app.use('/assets', express.static('assets'));
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
-})
+});
 
 app.listen(PORT, () => {
   console.log('litening to port 3000');

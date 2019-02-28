@@ -17,5 +17,10 @@ let headingSay = 'I can add elements to the DOM!';
 let h1Tag = document.createElement('h1');
 h1Tag.innerHTML = headingSay;
 
-let bodyTag = document.querySelector('body');
-bodyTag.appendChild(h1Tag);
+let divTag = document.querySelector('div');
+divTag.appendChild(h1Tag);
+
+let imgSource = "http://www.erdekesvilag.hu/kepek/elkapott-pillanatok/kepek-28.jpg";
+let imgTag = document.createElement('img');
+imgTag.setAttribute('src', imgSource);
+divTag.appendChild(imgTag);

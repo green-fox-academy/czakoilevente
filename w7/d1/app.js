@@ -25,3 +25,16 @@ app.get(('/doubling'), (req, res) => {
 
   res.send(myObject);
 });
+
+app.get(('/greeter'), (req, res) => {
+  let myObject = {};
+
+  if (req.query.name === undefined) {
+    myObject.error = "Please provide a name!";
+  } else {
+    myObject.welcome_message = `Oh, hi there ${req.query.name}, my dear ${req.query.title}!`;
+  };
+
+  res.send(myObject);
+
+})

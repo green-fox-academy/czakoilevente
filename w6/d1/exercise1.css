@@ -1,0 +1,42 @@
+body { 
+  height: 100vh;
+}
+
+
+.container{
+  background: #CCC;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-content: center;
+}
+
+.green {
+  background: green;
+  flex-grow: 1;
+  order: 0;
+}
+
+.yellow {
+  background: yellow;
+  flex-grow: 2;
+  order: 2;
+}
+
+.purple {
+  background: purple;
+  flex-grow: 1;
+  order: 1;
+}
+
+.box{
+  height: 50px;
+}
+
+
+/* .container:after {
+  content: "";
+  display: block;
+  clear: both;
+} */

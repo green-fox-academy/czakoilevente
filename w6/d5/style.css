@@ -1,0 +1,50 @@
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+  text-align: center;
+  }
+
+.big-image{
+  width: 50%;
+  
+}
+
+.bg {
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: relative;
+}
+
+.bg:after{
+  content: "";
+  background-image: url('https://cdn.pixabay.com/photo/2015/10/30/17/50/stone-floor-1014518_960_720.jpg');
+  background-size: 100%;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+
+.smallpic{
+  height: 100px;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.small-list{
+  display: flex;
+  margin: 0;
+  padding: 10;
+ 
+}
+
+.mainpic {
+  width: 200px;
+}

@@ -11,6 +11,7 @@ app.get('/', (req, res) => {
 app.listen(8080);
 
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
+app.use(express.json());
 
 app.get('/doubling', (req, res) => {
   const inputNumber = Number(req.query.input);
@@ -50,3 +51,41 @@ app.get('/appenda/:appendable?', (req, res) => {
   res.send(JSON.stringify(myObject));
 });
 
+app.post('/dountil/:action', (req, res) => {
+  //console.log(req.params, req.body);
+  let myObject = {};
+
+  if (req.body.until === undefined) {
+    myObject.error = "Please provide a number!";
+    res.send(JSON.stringify(myObject));
+  };
+
+  function sumFunction(numUntil) {
+    let sumNum = 0;
+    for (let i = 1; i <= numUntil; i++) {
+      sumNum += i;
+    };
+    return sumNum;
+  };
+
+  if (req.params.action == "sum") {
+    myObject.result = sumFunction(req.body.until);
+    //console.log('Sum', myObject.result);
+    res.send(JSON.stringify(myObject));
+  };
+
+  function factFunction(numUntil) {
+    let sumNum = 1;
+    for (let i = 1; i <= numUntil; i++) {
+      sumNum *= i;
+    };
+    return sumNum;
+  };
+
+  if (req.params.action == "factor") {
+    myObject.result = factFunction(req.body.until);
+    //console.log('factor', myObject);
+    res.send(JSON.stringify(myObject));
+  };
+
+});

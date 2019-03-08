@@ -1,8 +1,11 @@
 w4/d4/workshop-tapeTest/node_modules/*
 practice/
 node_modules/
-package-lock.json
 node_modules/
 gyakorlas/
 gyakorlas.ts
+insert.js
+schema.sql
+select.js
 package.json
+package-lock.json

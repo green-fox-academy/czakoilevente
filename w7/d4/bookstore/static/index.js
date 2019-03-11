@@ -57,12 +57,4 @@ buttonTwo.onclick = () => {
   };
   http.send();
 
-
-
-
 };
-
-
-
-
-

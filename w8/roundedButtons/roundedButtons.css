@@ -14,25 +14,25 @@ body {
 
 #blue {
   border-top: 2px solid rgb(80, 127, 197);
-  box-shadow: 0px 3px 2px rgb(22, 24, 129); 
-  background: linear-gradient(rgb(68, 96, 221) -20%, rgb(36, 52, 122) 80%)
+  box-shadow: 0px 3px 2px rgb(23, 24, 80); 
+  background: linear-gradient(rgb(68, 96, 221) -20%, rgb(27, 42, 110) 80%)
 }
 
 #green {
-  border-top: 2px solid rgb(117, 185, 127);
-  box-shadow: 0px 3px rgb(27, 80, 16); 
-  background: linear-gradient(rgb(82, 219, 105) -20%,rgb(39, 105, 50) 80%)
+  border-top: 2px solid rgb(128, 187, 137);
+  box-shadow: 0px 3px rgb(20, 63, 11); 
+  background: linear-gradient(rgb(51, 180, 73) -20%,rgb(18, 82, 30) 80%)
 }
 
 #red {
   border-top: 2px solid rgb(233, 123, 123);
-  box-shadow: 0px 3px rgb(134, 32, 32); 
-  background: linear-gradient(rgb(211, 69, 69) -20% , rgb(170, 40, 40) 80%)
+  box-shadow: 0px 3px rgb(107, 25, 25); 
+  background: linear-gradient(rgb(194, 61, 61) -20% , rgb(139, 32, 32) 80%)
 }
 
 #light {
   border-top: 2px solid rgb(118, 195, 240);
-  box-shadow: 0px 3px rgb(12, 34, 95); 
+  box-shadow: 0px 3px rgb(11, 27, 71); 
   background: linear-gradient(rgb(86, 164, 209) -20% , rgb(38, 72, 167) 80%)
 }
 
@@ -49,14 +49,17 @@ body {
 }
 
 .button {
-  padding: 0px;
   width: 120px;
   height: 50px;
   margin-right: 40px;
   border-radius: 10px;
   font-weight: 600;
-  color: rgb(179, 185, 192);
-  border-style: none;    
+  color: rgb(177, 179, 182);
+  border-style: none;  
+}
+
+.button:focus {
+  outline: none;
 }
 
 .button:hover {
@@ -64,5 +67,7 @@ body {
 }
 
 .button:active {
-  filter: brightness(110%)
+  filter: brightness(110%);
+  position: relative;
+  top: 1px;
 }

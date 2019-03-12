@@ -13,42 +13,36 @@ body {
 }
 
 #blue {
-  background: rgb(53, 53, 199);
   border-top: 2px solid rgb(80, 127, 197);
   box-shadow: 0px 3px 2px rgb(22, 24, 129); 
   background: linear-gradient(rgb(68, 96, 221) -20%, rgb(36, 52, 122) 80%)
 }
 
 #green {
-  background: rgb(61, 177, 81);
   border-top: 2px solid rgb(117, 185, 127);
   box-shadow: 0px 3px rgb(27, 80, 16); 
   background: linear-gradient(rgb(82, 219, 105) -20%,rgb(39, 105, 50) 80%)
 }
 
 #red {
-  background: rgb(204, 59, 59);
   border-top: 2px solid rgb(233, 123, 123);
   box-shadow: 0px 3px rgb(134, 32, 32); 
   background: linear-gradient(rgb(211, 69, 69) -20% , rgb(170, 40, 40) 80%)
 }
 
 #light {
-  background: rgb(31, 155, 226);
   border-top: 2px solid rgb(118, 195, 240);
   box-shadow: 0px 3px rgb(12, 34, 95); 
   background: linear-gradient(rgb(86, 164, 209) -20% , rgb(38, 72, 167) 80%)
 }
 
 #black {
-  background: rgb(32, 32, 32);
   border-top: 2px solid rgb(54, 54, 54);
   box-shadow: 0px 3px rgb(0, 0, 0); 
   background: linear-gradient(rgb(46, 46, 46) -10%, rgb(12, 12, 12) 80%)
 }
 
 #white {
-  background: rgb(224, 224, 224);
   border-top: 2px solid white;
   box-shadow: 0px 3px; 
   background: linear-gradient(rgb(238, 238, 238) -5%, rgb(209, 208, 208) 80%)

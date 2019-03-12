@@ -27,7 +27,7 @@ body {
 #red {
   border-top: 2px solid rgb(233, 123, 123);
   box-shadow: 0px 3px rgb(107, 25, 25); 
-  background: linear-gradient(rgb(194, 61, 61) -20% , rgb(139, 32, 32) 80%)
+  background: linear-gradient(rgb(221, 72, 72) -20% , rgb(139, 32, 32) 80%)
 }
 
 #light {
@@ -63,11 +63,11 @@ body {
 }
 
 .button:hover {
-  filter: brightness(150%)
+  filter: brightness(125%)
 }
 
 .button:active {
-  filter: brightness(110%);
+  filter: brightness(90%);
   position: relative;
-  top: 1px;
+  top: 2px;
 }

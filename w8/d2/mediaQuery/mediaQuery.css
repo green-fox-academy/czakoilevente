@@ -1,0 +1,35 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.green {
+  background: green;
+  flex-grow:1 ;
+}
+
+.yellow {
+  background: yellow;
+  flex-grow: 3;
+}
+
+.purple {
+  background: purple;
+  flex-grow:1 ;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .container div {
+    flex-grow: 1;
+  }
+
+}

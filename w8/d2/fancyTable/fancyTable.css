@@ -1,0 +1,46 @@
+body {
+  height: 100vh;
+  display: flex;
+  background: lightseagreen;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  border-collapse: collapse;
+  font-size: 30px;
+  border-style: hidden;
+}
+
+tr {
+  color: grey;
+  background: whitesmoke;
+  }
+
+th {
+  background: black;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 20px;
+}
+
+.mainHead {
+  background: black;
+  color: lightgray;
+}
+
+tbody :nth-child(1 ) th{
+  border-bottom: 4px solid gray;
+}
+
+tr:nth-child(odd) {
+  background: white;
+}

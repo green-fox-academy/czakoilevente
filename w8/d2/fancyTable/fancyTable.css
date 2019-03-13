@@ -20,10 +20,9 @@ table {
 tr {
   color: grey;
   background: whitesmoke;
-  }
+}
 
 th {
-  background: black;
   text-align: left;
 }
 
@@ -37,7 +36,7 @@ th, td {
   color: lightgray;
 }
 
-tbody :nth-child(1 ) th{
+tbody :nth-child(1) th {
   border-bottom: 4px solid gray;
 }
 

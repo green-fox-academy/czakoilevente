@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+body {
+  height: 95vh;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(167, 164, 164);
+}
+
+.loginDiv {
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 300px;
+  width: 300px;
+  background: white;
+  font-family: 'Comfortaa', cursive;
+  letter-spacing: 1px;
+  justify-items: center;
+  padding: 25px;
+  margin: 30px;
+}
+
+h1 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 5px;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgb(189, 188, 188)
+}
+
+input[type="password"] {
+  background-image: url(123.png);
+  background-size: 7%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+label {
+  font-size: 9px;
+  padding-top: 10px;
+}
+
+.button {
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 10px;
+  border-style: none;
+  color: rgb(240, 238, 238);
+  border-top: 2px solid rgb(54, 54, 54);
+  box-shadow: 0px 3px rgb(0, 0, 0);
+  background: linear-gradient(rgb(46, 46, 46) -10%, rgb(12, 12, 12) 80%);
+  margin-top: 30px;
+}
+
+input:focus {
+  border-width: 1px;
+  border-color: green;
+  outline: none;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  filter: brightness(140%)
+}
+
+.button:active {
+  filter: brightness(90%);
+  position: relative;
+  top: 1px;
+}
+
+a {
+  padding-top: 5px;
+  font-size: 8px;
+  align-self: flex-end;
+  letter-spacing: 0;
+}

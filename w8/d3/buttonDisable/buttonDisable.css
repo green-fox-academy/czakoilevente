@@ -1,5 +1,8 @@
 body {
-  background: rgb(236, 235, 235);
+  background-image: url(clouds.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
   width: 95%;
   height: 95vh;
   display: flex;
@@ -8,27 +11,41 @@ body {
 }
 
 div {
-  margin: 15px;
+  margin: 5px;
+  width: 90%;
 }
 
 form {
-  padding: 20px;
-  background: linear-gradient( rgba(207, 206, 206, 0.8) -10%, rgba(105, 104, 104, 0.8));
-  width: 350px;
-  height: 250px;
+  background: linear-gradient( rgba(207, 206, 206, 0.4) -10%, rgba(105, 104, 104, 0.8));
+  width: 400px;
+  height: 300px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
   justify-items: center;
+  align-items: center;
 }
 
-input:hover, label:hover {
+.button:hover, input:hover {
   filter: brightness(125%);
-  font-size: 110%;
 }
 
 p {
-  font-size: 20px;
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  text-shadow: rgba(24, 185, 164, 0.8);
 }
 
-#facts {
-  margin-top: 30px;
+.button {
+  border-radius: 5px;
+  box-shadow: 10px, 10x;
+  border-style: solid;
+  border-width: 0.5px;
+  font-size: 10px;
+  padding: 8px;
+}
+
+.button:focus {
+  outline: none;
 }

@@ -18,6 +18,9 @@ app.listen(PORT, () => {
 
 /* 
 npm init -y
+npm intall 
+npm intall node
 npm install express --save
+npm install mysql --save
 
 */

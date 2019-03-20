@@ -17,13 +17,13 @@ const connection = sql.createConnection({
   database: 'bookstore'
 });
 
-/* connection.connect((err) => {
+connection.connect((err) => {
   if (err) {
     console.error();
   };
-  console.log('connected');
+  console.log('connected to database');
 });
-*/
+
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, './index.html'))
@@ -60,7 +60,7 @@ app.get('/authors_name', (req, res) => {
       res.status(500).send();
       return;
     };
-    res.send(rows);
+    res.send( );
     //console.log(rows);
   });
 });

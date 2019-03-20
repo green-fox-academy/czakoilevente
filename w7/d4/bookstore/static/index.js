@@ -12,7 +12,7 @@ buttonOne.onclick = () => {
   http.open('GET', '/book_titles');
   http.onload = () => {
     let content = JSON.parse(http.responseText);
-    console.log(content[0].book_name);
+    console.log(content);
 
     for (i = 0; i < content.length; i++) {
       let liTag = document.createElement('li');
@@ -24,6 +24,8 @@ buttonOne.onclick = () => {
   };
   http.send();
 };
+
+http.
 
 buttonTwo.onclick = () => {
 

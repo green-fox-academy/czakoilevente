@@ -1,0 +1,94 @@
+body {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  min-height: 95vh;
+  background: linear-gradient(rgb(223, 222, 222) -10% ,rgb(133, 132, 132)) ;
+}
+
+.site-body {
+  display: flex;
+  height: 100%;
+  background: url(astronomy2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(space.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-shadow: 5px ;
+  color: aliceblue;
+}
+
+.post-div {
+  width: 74%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+  max-height: 1500px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  width: 95%;
+  height: 200px;
+  background: rgba(177, 177, 177, 0.15);
+  margin-bottom: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.left-div {
+  width: 25%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.button {
+  background: rgb(143, 143, 170);
+  height: 5vh;
+  width: 100%;
+  border-radius: 5px;
+
+}
+.button:focus {
+  outline: none;
+}
+.submit-post {
+  width: 98%;
+  margin-top: 5px;  
+}
+
+.submit-form {
+}
+
+.about {
+  width: 98%;
+  min-height: 30vh;
+  background: rgb(224, 207, 183);
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  
+}

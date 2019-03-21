@@ -39,7 +39,7 @@ app.get('/', (req, res) => {
 app.get('/game', (req, res) => {
   console.log('get request reached the server');
 
-  connectQuiz.query(`select question, answer, is_correct from answers left join questions on questions.id = answers.question_id where questions.id=${randomNumber(1,10)};`, (err, rows) => {
+  connectQuiz.query(`SELECT question, answer, is_correct FROM answers LEFT JOIN questions ON questions.id = answers.question_id WHERE questions.id=1;`, (err, rows) => {
     if (err) {
       console.log('query failed');
       res.status(501).send();
@@ -60,6 +60,23 @@ function randomNumber(min, max) {
   return Math.floor(Math.random() * max) + min;
 }
 
-function howManyQuestions () {
-  
-}
+app.get('/api/game', (req, res) => {
+  console.log('got the req on /api/get, sending rows back to front...');  
+  connectQuiz.query(`SELECT question, answer, is_correct FROM answers LEFT JOIN questions ON questions.id = answers.question_id WHERE questions.id=${randomNumber(1, 10)};`, (err, rows) => {
+    if (err) {
+      res.status(502).send();
+    } else {
+      res.send(rows);
+    }
+  });
+});
+
+app.get('/api/questions', (req, res) => {
+  connectQuiz.query('SELECT * FROM questions;', (err, rows) => {
+    if (err){
+      res.status(505).send();
+    } else {
+      res.send(rows);
+    }
+  })
+;})

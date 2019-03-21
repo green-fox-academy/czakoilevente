@@ -61,7 +61,7 @@ function randomNumber(min, max) {
 }
 
 app.get('/api/game', (req, res) => {
-  console.log('got the req on /api/get, sending rows back to front...');  
+  console.log('got the req on /api/get, sending rows back to front...');
   connectQuiz.query(`SELECT question, answer, is_correct FROM answers LEFT JOIN questions ON questions.id = answers.question_id WHERE questions.id=${randomNumber(1, 10)};`, (err, rows) => {
     if (err) {
       res.status(502).send();
@@ -72,11 +72,27 @@ app.get('/api/game', (req, res) => {
 });
 
 app.get('/api/questions', (req, res) => {
+  console.log('got the request GET on /api/questions');
+
   connectQuiz.query('SELECT * FROM questions;', (err, rows) => {
-    if (err){
+    if (err) {
       res.status(505).send();
     } else {
       res.send(rows);
     }
-  })
-;})
+  });
+});
+
+app.post('/api/questions', (req, res) => {
+  console.log('got the request POST on /api/questions');
+  console.log(req.body);
+  
+  connectQuiz.query(`INSERT INTO questions (question) VALUE ('${req.body.question}');`, (err, rows) => {
+    if (err) {
+      res.status(506).send();
+    } else {
+      console.log('question inserted in db');
+      res.send(rows);
+    }
+  });
+});

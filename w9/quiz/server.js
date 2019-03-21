@@ -29,10 +29,13 @@ connectQuiz.connect((error) => {
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/', express.static('.'));
+app.use('/', express.static('./assets'));
 
-app.get('/', (req, res) => {
-  //res.send('workin');
-  //res.sendFile(path.join(__dirname, 'index.html'));
+app.get('/game', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.get('/questions', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index2.html'));
 });
 

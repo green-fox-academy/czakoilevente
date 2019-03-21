@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  min-height: 95vh;
+  min-width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(167, 164, 164);
+}
+
+.score-board {
+  font-size: 15px;
+}
+
+.question {
+  font-size: 15px;
+}
+
+.question-window {
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 300px;
+  width: 300px;
+  background: white;
+  font-family: 'Comfortaa', cursive;
+  letter-spacing: 1px;
+  justify-items: center;
+  padding: 25px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.a-link {
+  font-size: 7px;
+}
+
+.button {
+  padding: 5px;
+  margin: 5px;
+}

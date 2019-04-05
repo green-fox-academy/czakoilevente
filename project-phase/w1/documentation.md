@@ -85,12 +85,12 @@
             (STEP 1/8 --> number of commands in docker file as: FROM, RUN, WORKDIR, COPY, RUN, EXPOSE, ENTRYPOINT, CMD) 
 
 
-    optional:
-      * remove image (force command: -f )
-            $ docker rmi myHelloWorld -f
+    *optional:*
+     * * remove image (force command: -f )*
+            *$ docker rmi myHelloWorld -f*
 
-      * list images
-            $ docker images
+    *  * list images*
+     *       $ docker images*
 
 
 ## 6)  create container by running docker image
@@ -106,11 +106,11 @@
                                                :
             //reachable from outside <hostPort>:<dockerPort> what is set in server.js file
 
-    optional:
-     to check container
-        $ docker ps 
-        or
-        $ docker ps -a
+    *optional:*
+     *to check container*
+        *$ docker ps *
+        *or*
+        *$ docker ps -a*
 
 
      to stop container (containerName -> docker ps / names )

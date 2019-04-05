@@ -1,4 +1,4 @@
-0) Install Docker CE in Linux Mint 19.1 or Ubuntu 18.04
+## 0) Install Docker CE in Linux Mint 19.1 or Ubuntu 18.04
 
     1. Update the packages index
         $ sudo apt-get update
@@ -42,23 +42,23 @@
         $ docker image ls
 
 
-1) Manage Docker as a non-root user
+## 1) Manage Docker as a non-root user
          $ sudo groupadd docker
          $ sudo usermod -aG docker $USER
       > reboot/relogin to re-evaluate group membership
          $ docker run hello-world
 
-2)  create working directory
+## 2)  create working directory
     create file: server.js      (check file content in github)
     create file: Dockerfile     (checkfile content in github or at point 4 with explanations)
 
-3)  dependencies (type in terminal in working directory)
+## 3)  dependencies (type in terminal in working directory)
         $ npm init -y
         $ npm install
         $ npm install node --save
         $ npm indtall express --save
 
-4)  Dockerfile ---------------------------->    Explanation
+## 4)  Dockerfile ---------------------------->    Explanation
         FROM alpine:latest                          * copy basic image
         RUN apk add --no-cache nodejs npm           * apk (alpine package manager) --no-cache (to reduce size of docker image) nodejs (copy nodejs to image) npm (copy npm to image)
 
@@ -75,7 +75,7 @@
         CMD ["server.js"]                           * CMD will provide argument to ENTRYPOINT. gonna look like this:  $ node server.js
 
 
-5)  create docker image file 
+## 5)  create docker image file 
         $ docker build -t myHelloWorld:latest . 
             ( . current folder)
             ( -t flag is for setting name )
@@ -90,7 +90,7 @@
             $ docker images
 
 
-5)  create container by running docker image
+## 6)  create container by running docker image
         $ docker run -it myHelloWorld:latest       
  
             //$ docker run -it <imageName:tag>
@@ -116,7 +116,7 @@
         // $ docker stop <containerName>
 
 
-6)  After running docker container...
+## 7)  After running docker container...
 
         $ docker run -it -d -p 8080:3000 myHelloWorld:latest
 
@@ -129,6 +129,3 @@
     browser will display:
 
         Hello World!
-    
-
-

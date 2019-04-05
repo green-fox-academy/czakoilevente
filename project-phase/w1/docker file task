@@ -1,0 +1,87 @@
+0) Install Docker CE in Linux Mint 19.1 or Ubuntu 18.04
+
+    1. Update the packages index
+        $ sudo apt-get update
+
+    2. Install packages to allow apt to use repository over https
+        $ sudo apt-get install \
+        apt-transport-https \
+        ca-certificates \
+        curl \
+        software-properties-common
+
+    3. Add docker GPG key
+        $ curl -fsSL https://download.docker.com/linux/ubuntu | sudo apt-key add -
+
+    4. Add key fingerprint
+        $ sudo apt-key fingerprint 0EBFCD88
+
+    5. add the repository for Ubuntu 18.04 or Mint 19.1
+        $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+
+    6. Update index
+        $ sudo apt-get update
+
+    7. Install docker
+        $ sudo apt-get install docker-ce
+
+
+
+    TEST DOCKER VERSION
+        1. ensure that you have a supported version of Docker:
+            $ docker --version
+
+        2. to view even more details about your Docker installation:
+            $ docker info 
+        or  $ docker version 
+
+    TEST DOCKER INSTALLATION
+        $ docker run hello-world
+
+        List the hello-world image that was downloaded to your machine:
+        $ docker image ls
+
+
+1) Manage Docker as a non-root user
+     $ sudo groupadd docker
+     $ sudo usermod -aG docker $USER
+     > reboot/relogin to re-evaluate group membership
+     $ docker run hello-world
+
+2)  create folder
+    create server.js
+    create dockerfile
+
+3)  dependencies
+        npm init -y
+        npm install
+        npm install node --save
+        npm indtall express --save
+
+4)  create docker image file
+        $ docker build -t <imageName>:latest . (folder name)
+
+        remove image
+        $ docker rmi <imageName or imageID>
+
+        list images
+        $ docker images
+
+
+
+5)  create container by running docker image
+        $ docker run -it <imageName:tag>
+
+    check container
+        $ docker ps 
+        or
+        $ docker ps -a
+
+    stop container (containerName -> docker ps / names )
+        $ docker stop <containerName>
+
+    run docker image in daemon mode or background (-d) on ports (-p)
+        $ docker run -it -d -p <hostPort>:<dockerPort> <imageName:tag>
+        fe. (docker run -it -d -p 8080:80 myDockerImage:lastest 
+
+

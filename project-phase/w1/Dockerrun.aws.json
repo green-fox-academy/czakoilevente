@@ -1,0 +1,11 @@
+{     
+  "AWSEBDockerrunVersion": "1",          
+  "Image":{       
+    "Name": "lcd/my-hello-world"     
+  },     
+    "Ports": [       {         
+      "ContainerPort": "3000",
+      "hostPort": "8080"
+    }     
+  ]   
+}

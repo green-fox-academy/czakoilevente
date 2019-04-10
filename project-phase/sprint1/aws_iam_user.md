@@ -32,20 +32,21 @@ AWS Identity and Access Management (IAM) is a web service what you can use for s
   `this will pop up a window` 
 
 
-**6.** for input field **"Group name"** type: Administrators
+**6.** for input field **"Group name"** type: 
+    ```Administrators```
   - in dropdown menu "Filter policies" (under button "Create policy")
   - choose check box "AWS managed - job function"
   - from the result list choose check box: "AdministratorAccess"
-  - click on button "Create group" (blue button, bottom right corner of window)
+  - click on button "Create group" 
   `this will redirect back to list of groups (click on button "Refresh" to see the created group if necessary)` 
 
 
 **7.** check if checkbox **"Administrators"** (the group you just created) is selected
-  - then click on button **"Next: Tags"** (blue button, bottom right corner)
+  - then click on button **"Next: Tags"** 
   `this will redirect, you will see "Add tags (optional)" title` 
 
     
-**8.** [OPTIONAL] here you can add user tags as key-value pairs you can read more at [this link](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html)
+**8.** **[OPTIONAL]** here you can add user tags as key-value pairs you can read more at [this link](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html)
 
 
 **9.** click on button **"Next: Review"** 

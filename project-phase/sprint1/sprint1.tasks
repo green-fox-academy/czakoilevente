@@ -1,0 +1,36 @@
+{
+                   "reporter" : "fox",
+                   "summary" : "Jenkins pipeline",
+                   "description" : "I as a project-phase participant \n I want to be able to test my code against the existing codebase \n so I send a Pull Request and my code gets automatically tested\n \n *Acceptance Criteria*\n - Jenkins multibranch pipeline is up and running\n - Whenever a PR is sent on the dev/staging/master branch the code gets tested\n - If the tests pass, the PR can be merged. If it doesn't, the PR gets blocked",
+                   "issueType" : "Story"
+               },
+               {
+                   "reporter" : "fox",
+                   "summary" : "IAM users set up",
+                   "description" : "I as a developer \n I want to be able to use security credentials to access AWS services \n So I use the ones provided by the OPS team\n \n *Acceptance Criteria*\n - Admin user is set up on AWS with access to everything besides the root account details\n -Developer user is set up on AWS with accesss to the four core services [S3, EBS, EC2. RDS]",
+                   "issueType" : "Story"
+               },
+               {
+                   "reporter" : "fox",
+                   "summary" : "Deploying NodeJS to EBS via AWSCLI",
+                   "description" : "I as a developer \n I want to be able to deploy my Hello World application to the Elastic Beanstalk \n So I follow the guide provided by the OPS team \n \n *Acceptance Criteria*\n - NodeJS Hello World application is deployed to Elastic Beanstalk via AWSCLI\n - The Developer IAM role credentials are used to authenticate to AWS\n - Documentation has been written in a .md file about how to deploy",
+                   "issueType" : "Story"
+               },
+               {
+                   "reporter" : "fox",
+                   "summary" : "Deploying Docker to EBS via AWSCLI",
+                   "description" : "I as a developer \n I want to be able to deploy my Hello World application to the Elastic Beanstalk \n So I follow the guide provided by the OPS team \n \n *Acceptance Criteria*\n - Docker Hello World application is deployed to Elastic Beanstalk via AWSCLI\n - The Developer IAM role credentials are used to authenticate to AWS\n - Documentation has been written in a .md file about how to deploy",
+                   "issueType" : "Story"
+               },
+               {
+                   "reporter" : "fox",
+                   "summary" : "Utilizing artifact repositories",
+                   "description" : "I as a developer \n I want to be able to save my application to an artifact repository\n so I follow the guide provided by the OPS team\n \n *Acceptance Criteria*\n - Docker image is stored on hub.docker.com\n - Documentation is written in a .md file about how to push docker images to the Docker Hub ",
+                   "issueType" : "Story"
+               },
+                  {
+                   "reporter" : "fox",
+                   "summary" : "Continuous Integration/Continuos Delivery",
+                   "description" : "I as a developer \n I want to be able to deploy to the development environment automatically \n So I send a PR to the dev branch and if the build is successful the new version gets deployed\n \n *Acceptance Criteria*\n - Multibranch Jenkins pipeline is set up\n - After a successful build Jenkins creates a new Docker Image and pushes it to hub.docker.com\n - After publishing it to the DockerHub, the new version gets automatically deployed to the EBS   ",
+                   "issueType" : "Story"
+               }

@@ -1,0 +1,31 @@
+sudo xcode-select --install
+
+#ins homebrew (brew.sh)
+
+
+$ sudo pip install awscli
+$ aws configure
+
+#console.aws.amazon.com
+#create user/goup/group policy {}
+#create accessKey
+
+#use default region + output format
+#
+
+#try first connection to aws (list of available zones)
+$ aws ec2 describe-regions
+
+$ ssh-keygen -t rsa -f ~/.ssh/ec2 -b 4096
+$ aws ec2 import-key-pair --key-name my-ec2-key --public-key-material "$(cat ~/.ssh/ec2.pub)"
+
+
+
+
+#create security group
+$ aws ec2 create-security-group --group-name <myFirstGroup> --description "Inbound ssh only"
+#--description -> Group Name on console.aws.amazon.com/ec2/v2 (description tab)
+
+$ aws ec2 authorize-security-group-ingress --group-name <myFirstGroup> cidr 256.256.256.256/256 --protocol tcp --port 256
+# cidr -> external ip -> google-my ip 
+# console.aws.amazon.com/ec2/v2 -> inbound tab

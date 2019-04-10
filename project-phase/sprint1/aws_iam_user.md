@@ -2,22 +2,19 @@
 # How to create IAM User
 
 ## Description
-    AWS Identity and Access Management (IAM) is a web service what you can use for securely controlling individual and
-    group access to your AWS resources.
+AWS Identity and Access Management (IAM) is a web service what you can use for securely controlling individual and group access to your AWS resources.
 
 
-#### 0)  LOGIN   
-    - login into aws console as root user
-        https://console.aws.amazon.com/iam/
-
+#### [LOGIN](https://console.aws.amazon.com/iam/) into AWS Console as root user
+    
 
 ## 1)  Create Administrator IAM User and Group
 
-    On navigation bar (left vertical) click on menu point **"Users"** [page](https://console.aws.amazon.com/iam/home#/home)
+On navigation bar (left vertical) click on menu point **"Users"** [page](https://console.aws.amazon.com/iam/home#/home)
 
-    Click on button **"Add user"** 
+Click on button **"Add user"** 
 
-    Set **"User details"**
+Set **"User details"**
         - **User name**                 <YourFisrtUsername>
         - **Access type**               -> AWS Management Console access
         - **Console password**          -> Custom password

@@ -33,21 +33,26 @@ Check if there's already present any of them by typing in terminal:
 **We can install pip with following command:**
 
 The curl command will download the installation script
-```curl -O https://bootstrap.pypa.io/get-pip.py```
+
+```$ curl -O https://bootstrap.pypa.io/get-pip.py```
 
 To download and install the latest version of pip and other required support packages:
-```python get-pip.py --user```
+
+```$ python get-pip.py --user```
+
 or
+
 ```$ python3 get-pip.py --user```
 
 
 To verify that pip is installed correctly:
+
 ```$ pip3 --version```
 
 
 #### Install the AWS
 
-Install:
+Command:
 
 ```$ pip3 install awscli --upgrade --user```
 

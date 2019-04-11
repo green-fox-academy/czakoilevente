@@ -1,5 +1,5 @@
 
-#Configuring the AWS CLI
+# Configuring the AWS CLI
 
 
 For general use, the aws configure command is the fastest way to set up your AWS CLI installation.

@@ -6,7 +6,7 @@ AWS Identity and Access Management (IAM) is a web service what you can use for s
 
 
 #### [LOGIN](https://console.aws.amazon.com/iam/) into AWS Console as root user
-    
+
 
 ##  Create Administrator IAM User and Group
 
@@ -16,9 +16,9 @@ AWS Identity and Access Management (IAM) is a web service what you can use for s
 
 
 **3.** Set **"User details"**
-  - **User name**:  yourFisrtUsername
-  - **Access type**: AWS Management Console access
-  - **Console password**: Custom password
+  - **User name**:              yourFisrtUsername
+  - **Access type**:            AWS Management Console access
+  - **Console password**:       Custom password
   - **Require password reset**: Leave the checkbox EMPTY
 
 
@@ -50,6 +50,7 @@ AWS Identity and Access Management (IAM) is a web service what you can use for s
 
 
 **9.** click on button **"Next: Review"** 
+
    `this will redirect, you will see "Review" title (you can check selected options for the new user you are about to add)` 
 
 
@@ -58,6 +59,13 @@ AWS Identity and Access Management (IAM) is a web service what you can use for s
 
 `For more question and detail, please visit ` [this site](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html)
         
+
+
+
+## Create IAM User and Group
+
+To create delegated IAM User follow the instructions as described for Administrator and set privileges accordingly.
+
 
         
     

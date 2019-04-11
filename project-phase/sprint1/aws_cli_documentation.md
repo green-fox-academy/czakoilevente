@@ -64,6 +64,12 @@ To upgrade to the latest version, run the installation command again:
 
 #### Troubleshoot
 
-If you encounter any errors during installation please visit [ this site ](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-troubleshooting.html).
+If you encounter any errors during installation please visit the links under:
 
-[install aws cli](https://docs.aws.amazon.com/cli/latest/userguide/install-linux.html)
+[AWS CLI Errors](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-troubleshooting.html).
+
+[Install aws cli](https://docs.aws.amazon.com/cli/latest/userguide/install-linux.html)
+
+[AWS CLI Using the Bundled](https://docs.aws.amazon.com/cli/latest/userguide/install-bundle.html)
+
+[AWS CLI in a Virtual Environment](https://docs.aws.amazon.com/cli/latest/userguide/install-virtualenv.html)

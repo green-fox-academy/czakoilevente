@@ -11,6 +11,7 @@ AWS services using commands in your command-line shell.
 Check if there's already present any of them by typing in terminal:
 
 ```$ python --version```
+
 ```$ python3 --version```
 
 

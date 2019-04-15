@@ -11,7 +11,7 @@ To install EB CLI to your computer for Window, macOS, Linux, or virtualenv, clic
  - Select Users menupoint in the left
  - Select preferred user
  - Go to Security credential tab
- - Hit "Create access key" button (pops new window with credentials) - 
+ - Hit "Create access key" button (pops new window with credentials) 
 
 
 ## Set up your application
@@ -91,9 +91,9 @@ Select a platform.
 9) GlassFish
 10) Go
 11) Java
-(default is 1):
+(default is 1)
 ```
-...again just hit enter for default.
+...for docker project, type: 7 
 
 
 ### [OPTIONAL] Set up SSH
@@ -151,14 +151,14 @@ Select a load balancer type
 1) classic
 2) application
 3) network
-(default is 1): 1
+(default is 1)
 ```
 ### Finish 
 
 If everthing went as we planned, it will take a few minutes to set up the whole thing. It is totally fine to wait 5-10 minutes. In the end console will show us the following message:
 
 ```
-INFO: Successfully Launched Environment:
+INFO: Successfully Launched Environment:...
 ```
 
 ### Extra info

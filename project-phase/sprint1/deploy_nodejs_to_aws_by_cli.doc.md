@@ -28,22 +28,22 @@ To install EB CLI to your computer for Window, macOS, Linux, or virtualenv, clic
 Fist you have to select the Region. Terminal will show the following lines in your command line:
 
   **Select a default region**
-    1) us-east-1 : US East (N. Virginia)
-    2) us-west-1 : US West (N. California)
-    3) us-west-2 : US West (Oregon)
-    4) eu-west-1 : EU (Ireland)
-    5) eu-central-1 : EU (Frankfurt)
-    6) ap-south-1 : Asia Pacific (Mumbai)
-    7) ap-southeast-1 : Asia Pacific (Singapore)
-    8) ap-southeast-2 : Asia Pacific (Sydney)
-    9) ap-northeast-1 : Asia Pacific (Tokyo)
-    10) ap-northeast-2 : Asia Pacific (Seoul)
-    11) sa-east-1 : South America (Sao Paulo)
-    12) cn-north-1 : China (Beijing)
-    13) us-east-2 : US East (Columbus)
-    14) ca-central-1 : Canada (Central)
-    15) eu-west-2 : EU (London)
-    (default is 3)
+ 1) us-east-1 : US East (N. Virginia)
+ 2) us-west-1 : US West (N. California)
+ 3) us-west-2 : US West (Oregon)
+ 4) eu-west-1 : EU (Ireland)
+ 5) eu-central-1 : EU (Frankfurt)
+ 6) ap-south-1 : Asia Pacific (Mumbai)
+ 7) ap-southeast-1 : Asia Pacific (Singapore)
+ 8) ap-southeast-2 : Asia Pacific (Sydney)
+ 9) ap-northeast-1 : Asia Pacific (Tokyo)
+ 10) ap-northeast-2 : Asia Pacific (Seoul)
+ 11) sa-east-1 : South America (Sao Paulo)
+ 12) cn-north-1 : China (Beijing)
+ 13) us-east-2 : US East (Columbus)
+ 14) ca-central-1 : Canada (Central)
+ 15) eu-west-2 : EU (London)
+ (default is 3)
 
 You can select one Region by writing it's number into console, and hit enter... or just hit enter for default if it's good for you.
 

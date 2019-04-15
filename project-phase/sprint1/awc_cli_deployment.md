@@ -58,7 +58,7 @@ You must provide your credentials.
 (aws-secret-key): 5ZRIrtTM4ciIAvd4EXAMPLEDtm+PiPSzpoK
 ```
 
-**Note: If you want to reset credentials, just make it inactive or delete if it's unnecessary. Typing
+**Note: If you want to reset credentials or set new user, log into aws console in browser, go to users menu and security credentials tab, and make it inactive or delete the actual one, create new access key with secret access key. Typing
 ```$ eb init```
 will ask for it again. (In some cases you'll have to reenter the code if terminal does not ask for it.)**
 

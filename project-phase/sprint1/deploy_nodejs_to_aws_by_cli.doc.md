@@ -27,7 +27,8 @@ To install EB CLI to your computer for Window, macOS, Linux, or virtualenv, clic
 ### Region selection
 Fist you have to select the Region. Terminal will show the following lines in your command line:
 
-  **Select a default region**
+```
+ Select a default region
  1) us-east-1 : US East (N. Virginia)
  2) us-west-1 : US West (N. California)
  3) us-west-2 : US West (Oregon)
@@ -44,6 +45,7 @@ Fist you have to select the Region. Terminal will show the following lines in yo
  14) ca-central-1 : Canada (Central)
  15) eu-west-2 : EU (London)
  (default is 3)
+```
 
 You can select one Region by writing it's number into console, and hit enter... or just hit enter for default if it's good for you.
 

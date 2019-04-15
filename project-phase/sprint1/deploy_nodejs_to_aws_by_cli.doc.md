@@ -86,7 +86,8 @@ Next you need to select what kind of platfrom do you want to run on AWS EB. A li
 9) GlassFish
 10) Go
 11) Java
-(default is 1)```
+(default is 1)
+```
 
 ...for docker project, type: 7
 

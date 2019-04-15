@@ -64,10 +64,12 @@ It's necessary to name your application.
 It will have a default name based on your folder name. 
 You can set	 it to anything you want or if you want to choose default, just hit enter.
 
-**Enter Application Name**
 
+```
+Enter Application Name
 (default is "aws_with_docker"): 
 Application aws_with_docker has been created.
+```
 
 **Platform selection**
 Next you need to select what kind of platfrom do you want to run on AWS EB. A list of choice will appear in console, and you have to choose from it, as you did in the Region selection...
@@ -84,15 +86,18 @@ Next you need to select what kind of platfrom do you want to run on AWS EB. A li
 9) GlassFish
 10) Go
 11) Java
-(default is 1)
+(default is 1)```
+
 ...for docker project, type: 7
-```
+
 
 #### [OPTIONAL] Set up SSH
 Now you can choose to set up SSH for your instances.
 
+```
 Do you want to set up SSH for your instances?
 (Y/n): 
+```
 
 Select option of your choice. If you hit enter, by default it will mark it as "Yes" because of capital letter.
 

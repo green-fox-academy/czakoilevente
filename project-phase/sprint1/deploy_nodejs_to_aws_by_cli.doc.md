@@ -74,7 +74,8 @@ Application aws_with_docker has been created.
 **Platform selection**
 Next you need to select what kind of platfrom do you want to run on AWS EB. A list of choice will appear in console, and you have to choose from it, as you did in the Region selection...
 
-```Select a platform.
+```
+Select a platform.
 1) Node.js
 2) PHP
 3) Python

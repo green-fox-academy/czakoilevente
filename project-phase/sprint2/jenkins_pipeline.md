@@ -22,7 +22,6 @@ Select a **project type** (for testing purpose I reccomend **"Freestyle project"
 <img src="assets/jenkins_pipeline_new-project.png">
 
 Hit enter or click "Ok" to go on.
-
 <br/><br/>
 
 ### Configure new project
@@ -38,13 +37,11 @@ General, Hubot, Source Code Management, Build Triggers, Build Environment, Build
 Tick in the check-box: **"GitHub project"**.
 
 Set URL field: **"https://github.com/example-project-url/"**.
-
 <br/><br/>
 
 **Hubot**
 
 Leave all otpions empty.
-
 <br/><br/>
 
 **Source code management**
@@ -56,7 +53,6 @@ Repositories: Repository URL: **"https://github.com/example-project-url.git"** (
 Repositories: Credentials: select from dropdown or click on "ADD" button (this profile will have to have permission to make changes on GitHub repo)
 
 Branches to build: Branch Specifier (blank for 'any'): you can leave it empty.
-
 <br/><br/>
 
 **Build triggers**
@@ -73,13 +69,11 @@ Find the option (below) and tick it in:
 Build every pull request automatically without asking (Dangerous!).
 ```
 <img src="assets/jenkins_build-triggers_danger.png">
-
 <br/><br/>
 
 **Build environment**
 
 Leave all otpions empty.
-
 <br/><br/>
 
 **Build**
@@ -87,11 +81,9 @@ Leave all otpions empty.
 Click on drop-down button: "Add build step".
 
 Select option: **"GitHub PR: set 'pending' status"**.
-
 <br/><br/>
 
 [OPTIONAL]
-
 Click on drop-down button: "Add build step".
 
 Select option: **"Execute shell"**.
@@ -99,11 +91,10 @@ Select option: **"Execute shell"**.
 Here you can set up any command you wish Jenkins to do (echo Hello Wolrd).
 
 <br/><br/>
-<br/><br/>
 
 **You can now finish configuration by clicking on button "Save"**
 
-<br/><br/>
+
 <br/><br/>
 
 ## Setting up GitHub repo
@@ -126,7 +117,6 @@ Click on button **"Add webhook"** (might ask for login again for that)
 You should see this page:
 
 <img src="assets/github-project-webhhok-setting.png">
-
 <br/><br/>
 
 **Payload URL**
@@ -138,32 +128,27 @@ Example-URLs:
 http://195.228.147.126:9090/github-webhook/  (all events)
 
 http://195.228.147.126:9090/ghprbhook/  (pull_request and push)
-
 <br/><br/>
 
 **Content type**
 
 Select **application/json**.
-
 <br/><br/>
 
 **Secret**
 
 [OPTIONAL] can be empty
-
 <br/><br/>
 
 **Which events would you like to trigger this webhook?**
 
 Select the one to your requirements (reccomended: "Send me everything")
-
 <br/><br/>
 
 **Active**
 
 Tick in thee checkbox.
 
-<br/><br/>
 <br/><br/>
 
 **You can now finish configuration by clicking on button "Add webhook"**

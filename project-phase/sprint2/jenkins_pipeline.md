@@ -23,13 +23,15 @@ Select a **project type** (for testing purpose I reccomend **"Freestyle project"
 
 Hit enter or click "Ok" to go on.
 
+<br/><br/>
+
 ### Configure new project
 On the start of configuration you should see 5 tabs: 
 
 General, Hubot, Source Code Management, Build Triggers, Build Environment, Build, Post-build Actions.
 
 
-**GENERAL**
+**General**
 
 [OPTIONAL] Set description.
 
@@ -37,12 +39,15 @@ Tick in the check-box: **"GitHub project"**.
 
 Set URL field: **"https://github.com/example-project-url/"**.
 
+<br/><br/>
 
-**HUBOT**
+**Hubot**
 
 Leave all otpions empty.
 
-**SOURCE CODE MANAGEMENT**
+<br/><br/>
+
+**Source code management**
 
 Select radio-button: **"Git"**.
 
@@ -52,8 +57,9 @@ Repositories: Credentials: select from dropdown or click on "ADD" button (this p
 
 Branches to build: Branch Specifier (blank for 'any'): you can leave it empty.
 
+<br/><br/>
 
-**BUILD TRIGGERS**
+**Build triggers**
 
 Tick in the check-box: **"GitHub Pull Request Builder"**
 
@@ -68,17 +74,21 @@ Build every pull request automatically without asking (Dangerous!).
 ```
 <img src="assets/jenkins_build-triggers_danger.png">
 
+<br/><br/>
 
-**BUILD ENVIRONMENT**
+**Build environment**
 
 Leave all otpions empty.
 
+<br/><br/>
 
-**BUILD**
+**Build**
 
 Click on drop-down button: "Add build step".
 
 Select option: **"GitHub PR: set 'pending' status"**.
+
+<br/><br/>
 
 [OPTIONAL]
 
@@ -88,10 +98,13 @@ Select option: **"Execute shell"**.
 
 Here you can set up any command you wish Jenkins to do (echo Hello Wolrd).
 
+<br/><br/>
+<br/><br/>
 
 **You can now finish configuration by clicking on button "Save"**
 
-
+<br/><br/>
+<br/><br/>
 
 ## Setting up GitHub repo
 
@@ -114,6 +127,7 @@ You should see this page:
 
 <img src="assets/github-project-webhhok-setting.png">
 
+<br/><br/>
 
 **Payload URL**
 
@@ -125,25 +139,32 @@ http://195.228.147.126:9090/github-webhook/  (all events)
 
 http://195.228.147.126:9090/ghprbhook/  (pull_request and push)
 
-
+<br/><br/>
 
 **Content type**
 
 Select **application/json**.
 
+<br/><br/>
+
 **Secret**
 
 [OPTIONAL] can be empty
+
+<br/><br/>
 
 **Which events would you like to trigger this webhook?**
 
 Select the one to your requirements (reccomended: "Send me everything")
 
+<br/><br/>
+
 **Active**
 
 Tick in thee checkbox.
 
-
+<br/><br/>
+<br/><br/>
 
 **You can now finish configuration by clicking on button "Add webhook"**
 

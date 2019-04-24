@@ -102,3 +102,30 @@ Upon success, you should see something like this:
 <br>
 
 **Now your database has been created**
+
+
+
+## Connect to DB via terminal
+
+Open a terminal.
+
+Type:
+
+```
+$ mysql -h mysql–test-instance1.123456789012.us-east-1.rds.amazonaws.com -P 3306 -u mymasteruser -p
+```
+
+if success, you should see:
+
+```
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 350
+Server version: 5.6.40-log MySQL Community Server (GPL)
+
+Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
+
+mysql>
+```
+
+You are now able to use sql commands 
+

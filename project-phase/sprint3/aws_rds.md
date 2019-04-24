@@ -128,5 +128,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
 mysql>
 ```
 
-You are now able to use sql commands 
+You are now able to use sql commands.
+
+For more info and detailed explanation, visit [this site](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToInstance.html) .
 

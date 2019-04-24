@@ -66,11 +66,11 @@ Here you can choose to assign an existing security group, or create new one.
 
   - Description: [OPTIONAL]
 
-```
+
 **!NOTE!** You can configure the EFS file system to mount on your EC2 instance automatically. 
 
 For more information, see [Configuring an EFS File System to Mount Automatically at EC2 Instance Launch](https://docs.aws.amazon.com/efs/latest/ug/mount-fs-auto-mount-onreboot.html#mount-fs-auto-mount-on-creation).
-```
+
 <br>
 If ready, click on button: "Review and Launch"
 

@@ -66,6 +66,8 @@ Here you can choose to assign an existing security group, or create new one.
 
   - Description: [OPTIONAL]
 
+<br>
+
 
 **!NOTE!** You can configure the EFS file system to mount on your EC2 instance automatically. 
 

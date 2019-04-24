@@ -1,4 +1,4 @@
-# Elastic Cloud Computing Documentation
+# Elastic Cloud Computing Documentation (Linux)
 
 ### Prerequisites
 
@@ -111,7 +111,38 @@ It will redirect to the list of instances where you can see on the "Instance Sta
 **Your instance is now ready to use!**
 
 
+If error encounetered or needed more info, go [to this link](https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html) 
 
+<br>
+<br>
 
+## Hiding the private key file
+
+Open terminal, navigate to the location where your .pem file is saved.
+
+Enter the following command:
+
+```
+chmod 400 /path_to_key/my_key.pem
+
+```
+<br>
+<br>
+
+## Set SSH
+
+Open terminal, enter the following command:
+
+```
+$ ssh -i /path_to_key/my_key.pem user_name@public_dns_name
+
+```
+
+**Note:** Since a Linux instance was created the user name is 'ec2-user'. You can check the public DNS name of your instance on the AWS Console page after creating the instance. 
+
+<br>
+<br>
+
+## Deploying NodeJS application
 
 

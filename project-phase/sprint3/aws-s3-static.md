@@ -1,5 +1,9 @@
 # SERVE STATIC FILE IN AWS USING S3
 
+Amazon Simple Storage Service is storage for the Internet. It is designed to make web-scale computing easier for developers.
+
+For more info, please visit [this sie](https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html)
+
 #### Prerequisites
 
  - AWS account 

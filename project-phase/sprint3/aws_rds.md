@@ -103,6 +103,7 @@ Upon success, you should see something like this:
 
 **Now your database has been created**
 
+<br>
 
 
 ## Connect to DB via terminal

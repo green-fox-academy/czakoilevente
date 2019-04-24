@@ -62,7 +62,7 @@ Here you can choose to assign an existing security group, or create new one.
   - Port Range: 22
   - Source: 0.0.0.0 !WARNING!
 
-<img src="assets/aws-rds-create.png">
+<img src="assets/aws-ec2-warn.png">
 
   - Description: [OPTIONAL]
 

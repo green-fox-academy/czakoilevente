@@ -2,7 +2,7 @@
 
 (free service)
 
-<br\>
+<br>
 #### Prerequisites
 
   - AWS account

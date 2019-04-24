@@ -3,11 +3,12 @@
 (free service)
 
 <br>
-#### Prerequisites
+
+### Prerequisites
 
   - AWS account
 
-
+<br>
 ## Create database
 
 Login to AWS Console
@@ -23,9 +24,11 @@ rds
 
 then hit Enter.
 
+<br>
+
 It will redirect to RDS Dashboard, you should see "Amazon RDS" on the left.
 
-<br\>
+<br>
 1. **RDS Dashboard**
 
 If this is the first time to create database, you can just hit button "Create database"...
@@ -35,7 +38,7 @@ If this is the first time to create database, you can just hit button "Create da
 
 ...or go to menupoint: "Databases" and find button "Create database" in the top right corner.
 
-<br\>
+<br>
 2. **Select engine**
 
 Now you should see the databases listed in squares.
@@ -48,7 +51,7 @@ Select MySQL.
 
 Hit "Next".
 
-<br\>
+<br>
 3. **Specify DB details**
 
 you should see something like this:
@@ -56,7 +59,7 @@ you should see something like this:
 <img src="aws-specify.db-details.png">
 
 if you need more specified setting, set it.
-<br\>
+<br>
 Scroll down for "Settings pane".
 
 Set 
@@ -67,7 +70,7 @@ Set
 
 ...hit button "Next".
 
-<br\>
+<br>
 4. **Configure advanced settings**
 
 * **Network & Security**
@@ -76,7 +79,7 @@ Use default values and make sure it is set to public.
 
 <img src="aws-conf-advance-set.png">
 
-<br\>
+<br>
 * **Database options**
 
 Set name, port of your database...
@@ -88,7 +91,7 @@ Hit button "Create database" on the bottom of the page.
 Upon success, you should see something like this:
 
 <img src="aws-rds-db-success.png">
-<br\>
+<br>
 **Now your database has been created**
 
 

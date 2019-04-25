@@ -129,7 +129,7 @@ chmod 400 /path_to_key/my_key.pem
 <br>
 <br>
 
-## Set SSH
+## Connect with SSH
 
 Open terminal, enter the following command:
 
@@ -145,4 +145,37 @@ $ ssh -i /path_to_key/my_key.pem user_name@public_dns_name
 
 ## Deploying NodeJS application
 
+#### Prerequisites
 
+   - NVM (Node Version Manager)
+   - NodeJS
+   - Git [OPTIONAL]
+
+For explanation and installation of NVM and NodeJS, follow through [this tutorial](https://www.keycdn.com/blog/node-version-manager) .
+
+To install Git in EC2 environment, type in terminal:
+
+
+```
+$ sudo yum install -y git
+``` 
+
+<br>
+
+### Run application on VM
+
+You have possibilities to get it done:
+
+  * Clone a Git repository (Git), install dependencies, and run app with node:
+
+```
+node example-hello-world.js
+``` 
+
+  * Manually wirte your application and run with node.
+
+  * You can also run docker container.
+
+<br>
+
+**Make sure to test application by visiting EC2 instance's URL.** 

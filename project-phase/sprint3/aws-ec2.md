@@ -126,6 +126,9 @@ Enter the following command:
 chmod 400 /path_to_key/my_key.pem
 
 ```
+
+**NOTE:** [Linux File Permissions](https://www.linux.com/learn/understanding-linux-file-permissions)
+
 <br>
 <br>
 
@@ -172,9 +175,9 @@ You have possibilities to get it done:
 node example-hello-world.js
 ``` 
 
-  * Manually wirte your application and run with node.
+ * You can also [run docker on EC2](https://hackernoon.com/running-docker-on-aws-ec2-83a14b780c56).
 
-  * You can also run docker container.
+ * Manually wirte your application and run with node.
 
 <br>
 

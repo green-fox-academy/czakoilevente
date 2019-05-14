@@ -223,7 +223,7 @@ In the master branch panel, you should see a menu on the left:
 
 <img src="assets/jenkins-pipeline-master-menu.png">
 
-Click on button: "Build Now".
+Click on button: **"Build Now"**.
 
 It will build your pipeline, should look like this:
 
@@ -233,9 +233,20 @@ If all goes well, every modification in the GitHub repo will trigger this build 
 
 <br>
 
-#### Build failed
+#### Build failed / Debugging
 
 If something goes wrong, you should see something like this:
 
 <img src="assets/jenkins-pipeline-failed.png">
 
+**Build History** is on the left under the menu, click on the dropdown next to the build number.
+
+Select **"Console Output"**.
+
+This will redirect to the console log page, where you can see what is the cause of error.
+
+It should look like something like this:
+
+<img src="assets/jenkins-pipeline-console.png">
+
+'God Help us all!'

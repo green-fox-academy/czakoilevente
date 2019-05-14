@@ -155,16 +155,25 @@ pipeline {
         sh 'npm init -y'
         sh 'npm install'  
         sh 'node <>test.js<>'
-      }
-    }
+     }
+   }
   stage('<>Building image<>') {
       steps{
         script {
           docker.build registry + ":$BUILD_NUMBER"
-        }
-      }
-    } 
-  stage('<>Deploy to EB<>') {
+       }
+     }
+   } 
+   stage('Deploy Image') {
+      steps{
+        script {
+          docker.withRegistry( '', dockerCred ) {
+            sh 'docker push adambhun/multibranch-ci-cd:latest'
+         }
+       }
+     }
+   }
+   stage('<>Deploy to EB<>') {
       when {
         branch 'master'
       }

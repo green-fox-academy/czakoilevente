@@ -56,12 +56,12 @@ You will see tabs to go through:
 
 Hit "Add source"
 
-<img src="assets/conf_pipeline_branch2.png">
+<img src="assets/conf_pipeline_branch.png">
 
 
 Select "GitHub" from dropdown:
 
-<img src="assets/conf_pipeline_branch.png">
+<img src="assets/conf_pipeline_branch2.png">
 
 **Fill!!**
 

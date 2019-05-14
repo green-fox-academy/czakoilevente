@@ -115,4 +115,6 @@ Setup environment:
  
  Let AWS initialize instance.
  
+ ```
  Note: AWS Elastic Beanstalk will create other tools as dependencies: VPC, EC2, S3... in case you need to clean up after the   task is done, make sure to delete/terminate those as well or contact support in case of need.
+```

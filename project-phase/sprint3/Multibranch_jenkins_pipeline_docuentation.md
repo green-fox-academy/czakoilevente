@@ -91,6 +91,8 @@ Fill the rest accustomed by your needs, or go deafult, like:
 
   - Docker
   - AWS
+  
+<img src="assets/jenkins-create-credentials.png">
     
 <br>
 

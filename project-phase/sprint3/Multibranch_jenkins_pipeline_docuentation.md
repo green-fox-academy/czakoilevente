@@ -210,3 +210,32 @@ pipeline {
 ```
 
 **For better understanding of pipeline syntax, please visit [this site](https://jenkins.io/doc/book/pipeline/syntax/)**
+
+<br>
+
+## Test Jenkins pipeline
+
+Login to Jenkins, go to your project.
+
+#### Build 
+
+In the master branch panel, you should see a menu on the left:
+
+<img src="assets/jenkins-pipeline-master-menu.png">
+
+Click on button: "Build Now".
+
+It will build your pipeline, should look like this:
+
+<img src="assets/jenkins-pipeline-working.png">
+
+If all goes well, every modification in the GitHub repo will trigger this build event and modify the website or application.
+
+<br>
+
+#### Build failed
+
+If something goes wrong, you should see something like this:
+
+<img src="assets/jenkins-pipeline-failed.png">
+

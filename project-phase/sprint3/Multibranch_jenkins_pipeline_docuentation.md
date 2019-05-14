@@ -27,6 +27,8 @@ Might be needed to delegate permission to the repo. Go to:
 
 <br>
 
+### Set Jenkinsfile
+
 
 ## Jenkins setup
 
@@ -83,6 +85,14 @@ Fill the rest accustomed by your needs, or go deafult, like:
 
 <img src="assets/build_config.png">
 
+<br>
+
+### Set up credentials
+
+  - Docker
+  - AWS
+    
+<br>
 
 ## EB setup - create application and environment
 
@@ -120,3 +130,61 @@ Setup environment:
  in case you need to clean up after the task is done, make sure to delete/terminate those as well 
  or contact support in case of need.
 ```
+
+<br>
+
+## Setup Jenkinsfile
+
+You will need to add Jenkinsfile to the repo for Jenkins pipeline to be able to follow commands.
+
+Your Jenkinsfile should look somehow like this:
+
+**Follow through code and replace pieces between signs <> ... <> with your own code.**
+
+```
+pipeline {
+  environment {
+    registry = '<>user_name/docker_image_name<>'
+    dockerCred = '<>docker_credentials_from_jenkins<>'
+    dockerImage = ''
+  }  
+ agent any
+  stages {
+    stage('<>Testing<>') {
+      steps {
+        sh 'npm init -y'
+        sh 'npm install'  
+        sh 'node <>test.js<>'
+      }
+    }
+  stage('<>Building image<>') {
+      steps{
+        script {
+          docker.build registry + ":$BUILD_NUMBER"
+        }
+      }
+    } 
+  stage('<>Deploy to EB<>') {
+      when {
+        branch 'master'
+      }
+      steps{
+        withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: '<>environment_name_of_EB_application<>', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
+          sh 'pip install awsebcli --upgrade --user'
+          sh 'eb deploy <>environment_name<> --version <>environment_version<>'
+        }
+      }
+    }
+    stage('<>Cleanup<>') {
+      steps{
+        sh 'docker rmi $registry:$BUILD_NUMBER'
+        sh 'rm -r node_modules'
+        sh 'rm package.json'
+      }
+    }
+  }
+}
+  
+```
+
+**For better understanding of pipeline syntax, please visit [this site](https://jenkins.io/doc/book/pipeline/syntax/)**

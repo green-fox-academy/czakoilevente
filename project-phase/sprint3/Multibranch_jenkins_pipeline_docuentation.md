@@ -137,6 +137,17 @@ Setup environment:
 
 You will need to add Jenkinsfile to the repo for Jenkins pipeline to be able to follow commands.
 
+This pipeline project will go through these stages:
+
+ - Pull github repo content upon change based on webhook.
+ - Test the code.
+ - Build docker image from the code.
+ - Deploy the image to docker hub.
+ - Deploy image to AWS Elastic Beanstalk.
+ - Remove docker image from Jenkins.
+ 
+ <br>
+
 Your Jenkinsfile should look somehow like this:
 
 **Follow through code and replace pieces between signs <> ... <> with your own code.**
@@ -164,11 +175,11 @@ pipeline {
        }
      }
    } 
-   stage('Deploy Image') {
+   stage('<>Deploy Image<>') {
       steps{
         script {
           docker.withRegistry( '', dockerCred ) {
-            sh 'docker push adambhun/multibranch-ci-cd:latest'
+            sh 'docker push <>docker_user_name/docker_image_name:version<>'
          }
        }
      }

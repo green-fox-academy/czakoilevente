@@ -84,3 +84,41 @@ Fill the rest accustomed by your needs, or go deafult, like:
 <img src="assets/build_config.png">
 
 
+## EB setup - create application and environment
+
+Login to AWS Console in browser and go to Elastic Beanstalk.
+
+<br>
+
+Create new application.
+
+<img src="assets/eb-create-app.png">
+
+<br>
+
+Create new environment.
+
+<img src="assets/eb-create-env.png">
+
+<br>
+
+Setup environment:
+
+ - Select Web server environment
+ - Select Platform: Docker
+ 
+ <img src="assets/eb-env-conf.png">
+ 
+ - Upload first version of application as .zip or .war. 
+ 
+ **This version will be required in Jenkinsfile as parameter.**
+ 
+ <img src="assets/eb-env-conf2.png">
+ 
+ Let AWS initialize instance.
+ 
+ Note: AWS Elastic Beanstalk will create other tools as dependencies: VPC, EC2, S3... in case you need to clean up after the   task is done, make sure to delete/terminate those as well or contact support in case of need.
+ 
+ 
+
+ 

@@ -87,7 +87,7 @@ Fill the rest accustomed by your needs, or go deafult, like:
 
 <br>
 
-### Set up credentials
+### Set up credentials in Jenkins for:
 
   - Docker
   - AWS
@@ -96,7 +96,7 @@ Fill the rest accustomed by your needs, or go deafult, like:
 
 ## EB setup - create application and environment
 
-Login to AWS Console in browser and go to Elastic Beanstalk.
+[Login to AWS Console](https://console.aws.amazon.com/console/home) and go to Elastic Beanstalk service.
 
 Create new application.
 

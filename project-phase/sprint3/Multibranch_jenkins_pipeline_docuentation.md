@@ -157,8 +157,8 @@ Your Jenkinsfile should look somehow like this:
 ```
 pipeline {
   environment {
-    registry = "czakoilevente/mallac-lev"
-    dockerCred = 'czakoilevente-docker'
+    registry = "<>docker_user_name/docker_image<>"
+    dockerCred = '<>docker_credentials_in_jenkins<>'
     dockerImage = ''
   }
   agent any
@@ -193,7 +193,7 @@ pipeline {
       steps{
         withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'bubuska-eb', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
           sh 'pip install awsebcli --upgrade --user'
-          sh 'echo "1" | eb init bubuska --region us-east-2 && eb use Bubuska-env && eb deploy Bubuska-env'
+          sh 'echo "1" | eb init <>aws-eb-application-name<> --region <>us-east-2<> && eb use <>aws-eb-environment-name<> && eb deploy <>aws-eb-environment-name<>'
         }
       }
     }

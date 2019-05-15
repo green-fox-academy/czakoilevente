@@ -119,18 +119,22 @@ Setup environment:
  
  <img src="assets/eb-env-conf.png">
  
- - Upload first version of application as **Dockerrun.aws.json**. 
- 
- **This version will be required in Jenkinsfile as parameter.**
- 
+ - No need to upload first version of application. 
+  
  <img src="assets/eb-env-conf2.png">
+ 
  
  Let AWS initialize instance.
  
  ```
- Note: AWS Elastic Beanstalk will create other tools as dependencies: VPC, EC2, S3... 
- in case you need to clean up after the task is done, make sure to delete/terminate those as well 
+ Note: 
+ 
+ 1) AWS Elastic Beanstalk will create other dependencies such as: VPC, EC2, S3... 
+ In case you need to clean up after the task is done, make sure to delete/terminate those as well 
  or contact support in case of need.
+ 
+ 2) To be able to initialize environment AWS will require a default VPC where all the depencis will be able to connect.
+ 
 ```
 
 <br>

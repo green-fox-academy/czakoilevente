@@ -120,6 +120,7 @@ Setup environment:
  <img src="assets/eb-env-conf.png">
  
  - No need to upload first version of application. 
+ 
   
  <img src="assets/eb-env-conf2.png">
  

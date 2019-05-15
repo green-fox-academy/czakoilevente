@@ -250,3 +250,9 @@ It should look like something like this:
 <img src="assets/jenkins-pipeline-console.png">
 
 'God Help us all!'
+
+<br>
+
+**SUCCESS**
+
+<img src="assets/jenkins-pipeline-success.png">

@@ -137,7 +137,7 @@ Setup environment:
  In case you need to clean up after the task is done, make sure to delete/terminate those as well 
  or contact support in case of need.
  
- 2) To be able to initialize environment AWS will require a default VPC where all the depencis will be able to connect.
+ 2) To be able to initialize environment AWS will require a default VPC where all the depencihttp://10.27.6.163:9090/blue/organizations/jenkins/create-pipeline/s will be able to connect.
  
 ```
 
@@ -220,9 +220,7 @@ pipeline {
 
 **For better understanding of pipeline syntax, please visit [this site](https://jenkins.io/doc/book/pipeline/syntax/)**
 
-**For better understanding of shell syntax put "/env-vars.html/" after jenkins url. 
-Example: http://195.228.147.126:9090/env-vars.html/
-**
+**For better understanding of shell syntax put "/env-vars.html/" after jenkins url.** [Example](http://195.228.147.126:9090/env-vars.html/)
 
 <br>
 
@@ -239,8 +237,8 @@ it might not work for you as you think, and you might not really understand why 
 3. To be able to update EB environment via EB CLI I needed tp create a ".elasticbeanstalk" folder in GitHub repo 
 and created a **"config.yml"** file in it which containes the follwing two lines:
 
-*deploy:*
-  *artifact: Dockerrun.aws.json*
+deploy:
+  artifact: Dockerrun.aws.json
 
 This will provide info for EB CLI to tell AWS EB Environment to pull latest docker image from Docker Hub.
 

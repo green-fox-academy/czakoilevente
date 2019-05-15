@@ -216,10 +216,45 @@ pipeline {
 }
   
 ```
+<br>
 
 **For better understanding of pipeline syntax, please visit [this site](https://jenkins.io/doc/book/pipeline/syntax/)**
 
+**For better understanding of shell syntax put "/env-vars.html/" after jenkins url. 
+Example: http://195.228.147.126:9090/env-vars.html/
+**
+
 <br>
+
+```
+NOTE:
+
+1. Using AWS EB CLI will complicate your life. If you can, use AWS CLI instead. It will be easier.
+
+2. Due to EB CLI is older then AWS CLI some jenkins plugins might not support it's functionality, 
+it might not work for you as you think, and you might not really understand why exactly.
+
+<br>
+
+3. To be able to update EB environment via EB CLI I needed tp create a ".elasticbeanstalk" folder in GitHub repo 
+and created a **"config.yml"** file in it which containes the follwing two lines:
+
+*deploy:*
+  *artifact: Dockerrun.aws.json*
+
+This will provide info for EB CLI to tell AWS EB Environment to pull latest docker image from Docker Hub.
+
+AWS will build environment, and will send status code to Jenkins.
+
+<br>
+4. I use echo "1" | eb init myapp --region us-west-2 to select a default environment 
+since eb init does not take environment as a positional argument 
+and then use eb use myenv to select the environment we want.
+
+```
+
+<br>
+
 
 ## Test Jenkins pipeline
 
@@ -257,7 +292,6 @@ It should look like something like this:
 
 <img src="assets/jenkins-pipeline-console.png">
 
-'God Help us all!'
 
 <br>
 

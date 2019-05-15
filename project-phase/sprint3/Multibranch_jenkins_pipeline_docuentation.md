@@ -243,9 +243,9 @@ This will provide info for EB CLI to tell AWS EB Environment to pull latest dock
 AWS will build environment, and will send status code to Jenkins.
 
 
-4. I use echo "1" | eb init myapp --region us-west-2 to select a default environment 
-since eb init does not take environment as a positional argument 
-and then use eb use myenv to select the environment we want.
+4. I use 'echo "1" | eb init aws-eb-application-name --region us-east-2' to select a default environment 
+since 'eb init' does not take environment as a positional argument 
+and then use 'eb use aws-eb-environment-name' to select the wanted environment.
 
 ```
 

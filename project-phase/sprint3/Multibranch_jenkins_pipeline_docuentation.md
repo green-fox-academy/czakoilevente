@@ -220,7 +220,8 @@ pipeline {
 
 **For better understanding of pipeline syntax, please visit [this site](https://jenkins.io/doc/book/pipeline/syntax/)**
 
-**For better understanding of shell syntax put "/env-vars.html/" after jenkins url.** [Example](http://195.228.147.126:9090/env-vars.html/)
+**For better understanding of shell syntax put "/env-vars.html/" after jenkins url.**
+**Example: http://195.228.147.126:9090/env-vars.html/**
 
 <br>
 

@@ -119,7 +119,7 @@ Setup environment:
  
  <img src="assets/eb-env-conf.png">
  
- - Upload first version of application as .zip or .war. 
+ - Upload first version of application as **Dockerrun.aws.json**. 
  
  **This version will be required in Jenkinsfile as parameter.**
  

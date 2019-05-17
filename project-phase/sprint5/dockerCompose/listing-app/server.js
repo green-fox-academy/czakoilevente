@@ -19,19 +19,21 @@ const connect = sql.createConnection({
 });
 
 function connectionReconnect () {
-  connect.connect((error) => {
-    if (error) {
-      console.log('database error' + '\n' + error);
-      console.log('Trying to reconnect to database...');
-      
-      setTimeout(connectionReconnect, 2000)
-    } else {
-      console.log('database up and running');
-    }
-  });
+  setTimeout(() => {
+    connect.connect((error) => {
+      if (error) {
+        console.log('database error' + '\n' + error);
+        console.log('Trying to reconnect to database...');
+        
+        setTimeout(connectionReconnect, 5000)
+      } else {
+        console.log('database up and running');
+      }
+    });
+  },25000);
 };
 
-//connectionReconnect();
+connectionReconnect();
 
 app.use(express.json());
 //app.use(express.urlencoded({ extended: true }));

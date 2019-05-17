@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  listing-app:
+    build: ./listing-app
+    ports:
+     - "3000:3000"
+    depends_on:
+      - database
+  database:
+    image: "mysql"
+    restart: always
+    environment:
+            MYSQL_USER: rotor
+            MYSQL_ROOT_PASSWORD: rotor
+            MYSQL_DATABASE: hello-db
+    network_mode: host

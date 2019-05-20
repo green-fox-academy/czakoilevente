@@ -23,9 +23,7 @@ Terraform has a "planning" step where it generates an execution plan. The execut
 
 ## Installation
 
-[Go to terraform's site.](https://www.terraform.io/downloads.html)
-
-<br>
+[Go to terraform's download site.](https://www.terraform.io/downloads.html)
 
 For linux installation follow these commands [source](https://askubuntu.com/questions/983351/how-to-install-terraform-in-ubuntu)
 

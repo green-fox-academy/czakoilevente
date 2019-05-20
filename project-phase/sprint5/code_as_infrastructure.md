@@ -4,6 +4,13 @@
 
 <br>
 
+**Prerequisites**
+1: Existing AWS Account(OR Setup a new account)
+2: IAM full access(OR at least have AmazonEC2FullAccess)
+3: AWS Credentials(AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY)
+
+<br>
+
 ### What is Terraform?
 
 Terraform is a tool made by Hashicorp for building, changing, and versioning infrastructure safely and efficiently. Terraform can manage existing and popular service providers ( aws, azure, Google cloud) as well as custom in-house solutions.

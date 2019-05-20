@@ -19,6 +19,8 @@ Infrastructure is described using a high-level configuration syntax. This allows
 
 Terraform has a "planning" step where it generates an execution plan. The execution plan shows what Terraform will do when you call apply. This lets you avoid any surprises when Terraform manipulates infrastructure.
 
+<br>
+
 ## Installation
 
 [Go to terraform's site.](https://www.terraform.io/downloads.html)

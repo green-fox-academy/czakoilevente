@@ -15,8 +15,52 @@ Infrastructure is described using a high-level configuration syntax. This allows
 
 Terraform has a "planning" step where it generates an execution plan. The execution plan shows what Terraform will do when you call apply. This lets you avoid any surprises when Terraform manipulates infrastructure.
 
+## Installation
+
+[Go to terraform's site.](https://www.terraform.io/downloads.html)
+
 <br>
 
+For linux installation follow these commands [source](https://askubuntu.com/questions/983351/how-to-install-terraform-in-ubuntu)
+
+1. Install Unzip
+
+```
+$ sudo apt-get install unzip
+
+```
+
+2. [Download](https://www.terraform.io/downloads.html) latest version of the terraform:
+
+```
+$ wget https://releases.hashicorp.com/terraform/0.11.14/terraform_0.11.14_linux_amd64.zip
+
+```
+
+3. Extract the downloaded file archive:
+
+```
+$ unzip terraform_0.11.14_linux_amd64.zip
+```
+
+4. Move the executable into a directory searched for executables:
+
+```
+$ sudo mv terraform /usr/local/bin/
+```
+
+5. Run it:
+
+```
+$ terraform --version 
+```
+
+Success should look like this in terminal:
+
+<img src="assets/terraform-install.png">
+
+
+<br>
 
 
 

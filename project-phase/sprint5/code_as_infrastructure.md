@@ -66,5 +66,14 @@ Success should look like this in terminal:
 
 <br>
 
+## First project with Terraform
 
+**This step is OPTIONAL, though I _highly recommend it_ in case You are new to this tool.
+It will guide You through the basics of managaging Workspaces with the help of descriptive explanations and screenshots.**
+
+[TERRAFORM TUTORIAL](https://learn.hashicorp.com/terraform/getting-started/install)
+
+<br>
+
+## 
 

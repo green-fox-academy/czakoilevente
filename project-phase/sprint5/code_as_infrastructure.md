@@ -29,6 +29,16 @@ Infrastructure is described using a high-level configuration syntax. This allows
 
 Terraform has a "planning" step where it generates an execution plan. The execution plan shows what Terraform will do when you call apply. This lets you avoid any surprises when Terraform manipulates infrastructure.
 
+```
+NOTES
+
+* Terraform code is written in the HashiCorp Configuration Language(HCL)
+
+* All the code ends with the extension of .tf
+
+* It’s a declarative language(We need to define what infrastructure we want and terraform will figure out how to create it)
+```
+
 <br>
 
 ## Installation

@@ -88,13 +88,15 @@ Success should look like this in terminal:
 
 ## First project with Terraform
 
-**This step is OPTIONAL, though I _highly recommend it_ in case You are new to this tool.**
+**This step is OPTIONAL, though I _highly recommend_ to do one of the tutorials in case You are new to this tool.**
 
 **It will guide You through the basics of managaging Workspaces with the help of descriptive explanations and screenshots.**
 
-[TERRAFORM TUTORIAL](https://learn.hashicorp.com/terraform/getting-started/install)
+[TERRAFORM TUTORIAL by Hashicorp](https://learn.hashicorp.com/terraform/getting-started/install)
+*Minimum estimated time of the full tutorial: 75 mins .*
 
-*Total estimated time of the full tutorial: 75 mins .*
+TERRAFORM TUTORIAL by medium.com (Prashant Lakhera)](https://medium.com/@devopslearning/introduction-to-terraform-part-1-30bca7efa436)
+*Minimum estimated time of the full tutorial: 90 mins .*
 
 <br>
 

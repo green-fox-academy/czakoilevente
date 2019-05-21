@@ -95,7 +95,7 @@ Success should look like this in terminal:
 [TERRAFORM TUTORIAL by Hashicorp](https://learn.hashicorp.com/terraform/getting-started/install)
 *Minimum estimated time of the full tutorial: 75 mins .*
 
-TERRAFORM TUTORIAL by medium.com (Prashant Lakhera)](https://medium.com/@devopslearning/introduction-to-terraform-part-1-30bca7efa436)
+[TERRAFORM TUTORIAL by medium.com (Prashant Lakhera)](https://medium.com/@devopslearning/introduction-to-terraform-part-1-30bca7efa436)
 *Minimum estimated time of the full tutorial: 90 mins .*
 
 <br>

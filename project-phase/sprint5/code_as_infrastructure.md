@@ -86,7 +86,7 @@ Success should look like this in terminal:
 
 <br>
 
-## First project with Terraform
+## First project with Terraform 
 
 **This step is OPTIONAL, though I _highly recommend_ to do one of the tutorials in case You are new to this tool.**
 
@@ -110,21 +110,26 @@ First you need to create a `.tf` file like: `exapmle.tf`
 
 <br>
 
-**Explanation:**
+#### Explanation:
 
  1. The `provider` block is used to configure the named provider, in our case "aws". 
+ 
+ <br>
 
-**!!! WARNING !!!**
-**DO NOT IN ANY CASE HARD CODE CREDENTIALS IN .TF FILE!**
-**TO PROVIDE CREDENTIALS FOR TERRAFORM ALWAYS USE VARIABLES POINTING TO A SEPARATE FILE WHICH HAS BEEN PREVIOUSLY ADDED TO GITIGNORE!**
-**IF SOMETHING GOES WRONG WITH GIT COMMANDS AND YOU NEED TO RESET COMMITS DO DOUBLE-TRIPLE-CHECK THAT LEAKING CREDENTIALS WILL NOT HAPPEN!**
+**!!! WARNING !!!** <br>
+**DO NOT IN ANY CASE HARD CODE CREDENTIALS IN .TF FILE!** <br>
+**TO PROVIDE CREDENTIALS FOR TERRAFORM ALWAYS USE VARIABLES POINTING TO A SEPARATE FILE WHICH HAS BEEN PREVIOUSLY ADDED TO GITIGNORE!** <br>
+**IF SOMETHING GOES WRONG WITH GIT COMMANDS AND YOU NEED TO RESET COMMITS <br> 
+DO DOUBLE-TRIPLE-CHECK THAT LEAKING CREDENTIALS WILL NOT HAPPEN!** <br>
 **IF THE CREDENTIALS LEAK OUT, DO !IMMEDIATELY! REMOVE FROM GITHUB AND DISABLE/DELETE/RECREATE IT IN AWS!!!**
 
-FOR CREDENTIALS:
+<br>
 
- 1. Create a file named `terraform.tfvars`
- 2. ADD TO GINIGNORE!
- 3. fill the file with the following contents:
+**FOR CREDENTIALS:**
+
+  A. Create a file named `terraform.tfvars`
+  B. ADD TO GITIGNORE!
+  C. fill the file with the following contents:
 
 ```
 access_key = "something"

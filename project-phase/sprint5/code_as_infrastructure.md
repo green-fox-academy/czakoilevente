@@ -154,6 +154,24 @@ secret_key = "anything"
 ### Resource block
 
 The `resource` block defines a resource that exists within the infrastructure. 
+
+```
+NOTES:
+
+Creating multiple recource blocks will tell Terraform to create multiple instance in one build process.
+
+To do so you should declare like this:
+
+resource "aws_instance" "Dev" {
+  ami = "ami-0f0fb38cd5492b1aa"
+  instance_type = "t2.micro"
+  key_name = "${var.key_name}"
+  security_groups = [
+    "${aws_security_group.ec2-allow-all.name}"
+  ]
+ }
+
+```
  
 To improve our configuration by assigning an elastic IP to the EC2 instance we're managing.
 Modify your `example.tf` and add the following:

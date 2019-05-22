@@ -290,7 +290,8 @@ Executing the plan will take a few minutes since Terraform waits for the EC2 ins
 
 Resources can be destroyed using the command:
 
-```$ terraform destroy
+```
+$ terraform destroy
 ```
 
 which is similar to terraform apply but it behaves as if all of the resources have been removed from the configuration.

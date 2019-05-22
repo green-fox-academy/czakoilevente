@@ -162,4 +162,15 @@ To assign S3 bucket to the EC2 instance will look like this:
 
 <img src="assets/terraform-recource-s3.png">
 
+<br>
+
+3. Provisioning
+
+Provisioners are used to execute scripts on a local or remote machine as part of resource creation or destruction. Provisioners can be used to bootstrap a resource, cleanup before destroy, run configuration management, etc.
+
+Provisioners are added directly to any resource:
+
+<img src="assets/terraform-provisioners.png">
+
+For provisioners other than local execution, you must specify [connection settings](https://www.terraform.io/docs/provisioners/connection.html) so Terraform knows how to communicate with the resource.
 

@@ -100,5 +100,61 @@ Success should look like this in terminal:
 
 <br>
 
-## 
+## Create job
+
+First you need to create a `.tf` file like: `exapmle.tf`
+
+**File content:**
+
+<img src="assets/terraform_tf.png">
+
+<br>
+
+**Explanation:**
+
+ 1. The `provider` block is used to configure the named provider, in our case "aws". 
+
+**!!! WARNING !!!**
+**DO NOT IN ANY CASE HARD CODE CREDENTIALS IN .TF FILE!**
+**TO PROVIDE CREDENTIALS FOR TERRAFORM ALWAYS USE VARIABLES POINTING TO A SEPARATE FILE WHICH HAS BEEN PREVIOUSLY ADDED TO GITIGNORE!**
+**IF SOMETHING GOES WRONG WITH GIT COMMANDS AND YOU NEED TO RESET COMMITS DO DOUBLE-TRIPLE-CHECK THAT LEAKING CREDENTIALS WILL NOT HAPPEN!**
+**IF THE CREDENTIALS LEAK OUT, DO !IMMEDIATELY! REMOVE FROM GITHUB AND DISABLE/DELETE/RECREATE IT IN AWS!!!**
+
+FOR CREDENTIALS:
+
+ 1. Create a file named `terraform.tfvars`
+ 2. ADD TO GINIGNORE!
+ 3. fill the file with the following contents:
+
+```
+access_key = "something"
+secret_key = "anything"
+```
+
+<img src="assets/terraform-cred-tfvars.png">
+
+```
+For all files which match terraform.tfvars or *.auto.tfvars present in the current directory,
+Terraform automatically loads them to populate variables. 
+
+If the file is named something else, you can use the -var-file flag directly to specify a file.
+```
+
+<img src="assets/terraform-cred-tfvars-file.png">
+
+<br>
+
+ 2. The `resource` block defines a resource that exists within the infrastructure. 
+
+To improve our configuration by assigning an elastic IP to the EC2 instance we're managing.
+Modify your `example.tf` and add the following:
+
+<img src="assets/terraform-resource-block-eip.png">
+
+<br>
+
+To assign S3 bucket to the EC2 instance will look like this:
+
+<img src="assets/terraform-recource-s3.png">
+
 

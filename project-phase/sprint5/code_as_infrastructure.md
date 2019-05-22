@@ -118,7 +118,7 @@ If the file is named something else, you can use the -var-file flag directly to 
 
 <br>
 
-#### Provider block:
+### Provider block:
 
 The `provider` block is used to configure the named provider, in our case "aws". 
  
@@ -152,12 +152,10 @@ secret_key = "anything"
 <br>
 
 
-#### Resource block
+### Resource block
 
 The `resource` block defines a resource that exists within the infrastructure. 
  
-The `tags` section is used to provide a name for your EC2 instance. 
-
 To improve our configuration by assigning an elastic IP to the EC2 instance we're managing.
 Modify your `example.tf` and add the following:
 
@@ -171,7 +169,7 @@ To assign S3 bucket to the EC2 instance will look like this:
 
 <br>
 
-3. Provisioning
+#### Provisioning
 
 Provisioners are used to execute scripts on a local or remote machine as part of resource creation or destruction. Provisioners can be used to bootstrap a resource, cleanup before destroy, run configuration management, etc.
 
@@ -198,3 +196,16 @@ For provisioners other than local execution, you must specify [connection settin
     private_key = "${file("./mal-ops-adm.pem")}"
   }
 ```
+
+#### Tags
+
+The `tags` section is used to provide a name for your EC2 instance. 
+
+```
+      tags {
+    Name = "some-project-name"
+  }
+
+```
+
+

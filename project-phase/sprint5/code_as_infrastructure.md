@@ -127,9 +127,9 @@ DO DOUBLE-TRIPLE-CHECK THAT LEAKING CREDENTIALS WILL NOT HAPPEN!** <br>
 
 **FOR CREDENTIALS:**
 
-  A. Create a file named `terraform.tfvars`
-  B. ADD TO GITIGNORE!
-  C. fill the file with the following contents:
+  * Create a file named `terraform.tfvars`
+  * ADD TO GITIGNORE!
+  * fill the file with the following contents:
 
 ```
 access_key = "something"

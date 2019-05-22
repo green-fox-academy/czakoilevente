@@ -160,16 +160,20 @@ NOTES:
 
 Creating multiple recource blocks will tell Terraform to create multiple instance in one build process.
 
-To do so you should declare like this:
+To do so you should declare as "Dev", "Production" or "staging" in the following examples:
 
 resource "aws_instance" "Dev" {
   ami = "ami-0f0fb38cd5492b1aa"
   instance_type = "t2.micro"
-  key_name = "${var.key_name}"
-  security_groups = [
-    "${aws_security_group.ec2-allow-all.name}"
-  ]
- }
+}
+
+resource "aws_instance" "Production" { 
+  ... 
+}
+
+resource "aws_instance" "staging" { 
+  ... 
+}
 
 ```
  

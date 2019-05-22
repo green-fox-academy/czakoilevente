@@ -250,3 +250,52 @@ This is how the backend should look like in your configuration file:
 <br>
 
 #### [>>> YOU CAN FIND EXAMPLE CONFIGURATIONS HERE <<<](https://www.terraform.io/intro/examples/index.html) 
+
+<br>
+
+## Run the job
+
+#### Init
+
+The first command to run for a new configuration -- or after checking out an existing configuration from version control -- is 
+
+``` $ terraform init ```
+
+which initializes various local settings and data that will be used by subsequent commands.<br> 
+The command will automatically download and install all the things set within the configuration file.
+
+<br>
+
+#### Apply Changes 
+
+In the same directory as the `example.tf` file you created, run: 
+
+``` $ terraform apply ```
+
+This will show the execution plan, describing which actions Terraform will take in order to change real infrastructure to match the configuration.
+
+If the plan was created successfully, Terraform will now pause and wait for approval before proceeding. <br>
+If anything in the plan seems incorrect or dangerous, it is safe to abort here with no changes made to your infrastructure. <br>
+In this case the plan looks acceptable, so type `yes` at the confirmation prompt to proceed.
+
+```
+Executing the plan will take a few minutes since Terraform waits for the EC2 instance to become available.
+```
+
+**Upon changing the configuration, run `$ terraform apply` again for Terraform to apply all the changes to the existing resources.**
+
+<br>
+
+#### Destroy
+
+Resources can be destroyed using the command:
+
+``` $ terraform destroy
+```
+
+which is similar to terraform apply but it behaves as if all of the resources have been removed from the configuration.
+
+Terraform will destroy resources in a suitable order to respect dependencies.
+
+
+

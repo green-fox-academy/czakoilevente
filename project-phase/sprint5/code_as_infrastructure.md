@@ -145,7 +145,7 @@ Terraform automatically loads them to populate variables.
 If the file is named something else, you can use the -var-file flag directly to specify a file.
 ```
 
-<img src="assets/terraform-cred-tfvars-file.png">
+<img src="assets/terraform-cred-tfvars-filee.png">
 
 <br>
 

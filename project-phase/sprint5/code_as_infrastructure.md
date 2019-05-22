@@ -253,7 +253,7 @@ This is how the backend should look like in your configuration file:
 
 <br>
 
-## RUN / MODIFY / TERMINATE THE JOB
+### RUN / MODIFY / TERMINATE THE JOB
 
 #### Init
 

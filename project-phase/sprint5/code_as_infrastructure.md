@@ -102,17 +102,17 @@ Success should look like this in terminal:
 
 ## Create job
 
-First you need to create a `.tf` file like: `exapmle.tf`
+First you need to create a `.tf` file like: `exapmle.tf`.
 
-**File content:**
-
-<img src="assets/terraform_tf.png">
+The content will consist of main blocks:`resource` and `provider` and sub-blocks such as: `tags`, `connection` and `provisioner`. 
 
 <br>
 
-#### Explanation:
+#### Provider block:
 
- 1. The `provider` block is used to configure the named provider, in our case "aws". 
+The `provider` block is used to configure the named provider, in our case "aws". 
+ 
+ <img src="assets/terraform_tf.png">
  
  <br>
 
@@ -136,7 +136,6 @@ access_key = "something"
 secret_key = "anything"
 ```
 
-<img src="assets/terraform-cred-tfvars.png">
 
 ```
 For all files which match terraform.tfvars or *.auto.tfvars present in the current directory,
@@ -149,9 +148,12 @@ If the file is named something else, you can use the -var-file flag directly to 
 
 <br>
 
- 2. The `resource` block defines a resource that exists within the infrastructure. 
+
+#### Resource block
+
+The `resource` block defines a resource that exists within the infrastructure. 
  
- The `tags` section is used to provide a name for your EC2 instance. 
+The `tags` section is used to provide a name for your EC2 instance. 
 
 To improve our configuration by assigning an elastic IP to the EC2 instance we're managing.
 Modify your `example.tf` and add the following:

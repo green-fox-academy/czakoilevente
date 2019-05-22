@@ -252,5 +252,4 @@ This is how the backend should look like in your configuration file:
 
 <br>
 
-
-
+### [EXAMPLE FILES HERE](https://www.terraform.io/intro/examples/index.html) 

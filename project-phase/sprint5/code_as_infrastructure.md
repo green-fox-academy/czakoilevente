@@ -106,6 +106,8 @@ First you need to create a `.tf` file like: `exapmle.tf`.
 
 The content will consist of main blocks:`resource` and `provider` and sub-blocks such as: `tags`, `connection` and `provisioner`. 
 
+For transparency you can use separate `.tf` files for the blocks.
+
 ```
 NOTE:
 For all files which match terraform.tfvars or *.auto.tfvars present in the current directory,

@@ -150,6 +150,8 @@ If the file is named something else, you can use the -var-file flag directly to 
 <br>
 
  2. The `resource` block defines a resource that exists within the infrastructure. 
+ 
+ The `tags` section is used to provide a name for your EC2 instance. 
 
 To improve our configuration by assigning an elastic IP to the EC2 instance we're managing.
 Modify your `example.tf` and add the following:
@@ -172,5 +174,22 @@ Provisioners are added directly to any resource:
 
 <img src="assets/terraform-provisioners.png">
 
+For transparency I suggest to use variables and separate file for the scripts to run in the instance. 
+
+```
+  provisioner "file" {
+    source      = "script.sh"
+    destination = "/tmp/script.sh"
+  }
+  
+```
+
 For provisioners other than local execution, you must specify [connection settings](https://www.terraform.io/docs/provisioners/connection.html) so Terraform knows how to communicate with the resource.
 
+```
+  connection {
+    type = "ssh"
+    user = "ec2-user"
+    private_key = "${file("./mal-ops-adm.pem")}"
+  }
+```

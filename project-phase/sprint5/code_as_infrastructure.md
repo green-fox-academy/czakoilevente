@@ -109,7 +109,8 @@ The content will consist of main blocks:`resource` and `provider` and sub-blocks
 For transparency you can use separate `.tf` files for the blocks.
 
 ```
-NOTE:
+NOTEs:
+
 For all files which match terraform.tfvars or *.auto.tfvars present in the current directory,
 Terraform automatically loads them to populate variables. 
 

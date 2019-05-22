@@ -106,6 +106,14 @@ First you need to create a `.tf` file like: `exapmle.tf`.
 
 The content will consist of main blocks:`resource` and `provider` and sub-blocks such as: `tags`, `connection` and `provisioner`. 
 
+```
+NOTE:
+For all files which match terraform.tfvars or *.auto.tfvars present in the current directory,
+Terraform automatically loads them to populate variables. 
+
+If the file is named something else, you can use the -var-file flag directly to specify a file.
+```
+
 <br>
 
 #### Provider block:
@@ -136,13 +144,6 @@ access_key = "something"
 secret_key = "anything"
 ```
 
-
-```
-For all files which match terraform.tfvars or *.auto.tfvars present in the current directory,
-Terraform automatically loads them to populate variables. 
-
-If the file is named something else, you can use the -var-file flag directly to specify a file.
-```
 
 <img src="assets/terraform-cred-tfvars-filee.png">
 

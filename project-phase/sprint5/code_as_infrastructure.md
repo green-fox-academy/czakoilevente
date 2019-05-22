@@ -51,14 +51,12 @@ For linux installation follow these commands [source](https://askubuntu.com/ques
 
 ```
 $ sudo apt-get install unzip
-
 ```
 
  **2. [Download](https://www.terraform.io/downloads.html) latest version of the terraform:**
 
 ```
 $ wget https://releases.hashicorp.com/terraform/0.11.14/terraform_0.11.14_linux_amd64.zip
-
 ```
 
  **3. Extract the downloaded file archive:**
@@ -121,7 +119,7 @@ If the file is named something else, you can use the -var-file flag directly to 
 
 ### Provider block:
 
-The `provider` block is used to configure the named provider, in our case "aws". 
+The `provider` block is used to configure the named provider, in our case `"aws"`. 
  
  <img src="assets/terraform_tf.png">
  
@@ -184,8 +182,7 @@ For transparency I suggest to use variables and separate file for the scripts to
   provisioner "file" {
     source      = "script.sh"
     destination = "/tmp/script.sh"
-  }
-  
+  }  
 ```
 
 For provisioners other than local execution, you must specify [connection settings](https://www.terraform.io/docs/provisioners/connection.html) so Terraform knows how to communicate with the resource.
@@ -208,7 +205,6 @@ The `tags` section is used to provide a name for your EC2 instance.
       tags {
     Name = "some-project-name"
   }
-
 ```
 
 <br>
@@ -253,4 +249,4 @@ This is how the backend should look like in your configuration file:
 
 <br>
 
-### [EXAMPLE FILES HERE](https://www.terraform.io/intro/examples/index.html) 
+#### [>>> YOU CAN FIND EXAMPLE CONFIGURATIONS HERE <<<](https://www.terraform.io/intro/examples/index.html) 

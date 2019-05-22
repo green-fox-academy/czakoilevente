@@ -110,7 +110,7 @@ First you need to create a `.tf` file like: `exapmle.tf`
 
 <br>
 
-**Explanation:**
+#### Explanation:
 
  1. The `provider` block is used to configure the named provider, in our case "aws". 
  
@@ -125,11 +125,11 @@ DO DOUBLE-TRIPLE-CHECK THAT LEAKING CREDENTIALS WILL NOT HAPPEN!** <br>
 
 <br>
 
-FOR CREDENTIALS:
+**FOR CREDENTIALS:**
 
- 1. Create a file named `terraform.tfvars`
- 2. ADD TO GITIGNORE!
- 3. fill the file with the following contents:
+  A. Create a file named `terraform.tfvars`
+  B. ADD TO GITIGNORE!
+  C. fill the file with the following contents:
 
 ```
 access_key = "something"

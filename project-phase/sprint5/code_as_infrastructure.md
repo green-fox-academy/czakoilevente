@@ -197,6 +197,8 @@ For provisioners other than local execution, you must specify [connection settin
   }
 ```
 
+<br>
+
 #### Tags
 
 The `tags` section is used to provide a name for your EC2 instance. 
@@ -207,5 +209,48 @@ The `tags` section is used to provide a name for your EC2 instance.
   }
 
 ```
+
+<br>
+
+#### Maps
+
+The name of the AMI-s can be also replaced by variables to avoid hard coding into .tf files.
+
+Exctract AMI-s to maps should look like this:
+
+<img  src="assets/terraform-ami-maps.png">
+
+<br>
+
+#### Output Values
+
+[Outputs](https://www.terraform.io/docs/configuration/outputs.html) are a way to tell Terraform what data is important and to define an output to show us the public IP address of the elastic IP address that we create:
+
+<img src="assets/terraform-outputs.png">
+
+<br>
+
+#### Modules
+
+Modules in Terraform are self-contained packages of Terraform configurations that are managed as a group. Modules are used to create reusable components, improve organization, and to treat pieces of infrastructure as a black box.
+
+<img src="assets/terraform-modules-warn.png">
+
+If you need to configure modules, please visit [this page](https://learn.hashicorp.com/terraform/getting-started/modules).
+
+<br>
+
+#### [Remote State Storage](https://learn.hashicorp.com/terraform/getting-started/remote)
+
+Terraform supports team-based workflows with a feature known as remote backends. Remote backends allow Terraform to use a shared storage space for state data, so any member of your team can use Terraform to manage the same infrastructure.
+
+To be able to use this service you will need to have a [Terraform Cloud account](https://learn.hashicorp.com/terraform/cloud/tf_cloud_gettingstarted.html).
+
+This is how the backend should look like in your configuration file:
+
+<img src="assets/terraform-cloud.png">
+
+<br>
+
 
 

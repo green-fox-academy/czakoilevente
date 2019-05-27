@@ -18,7 +18,7 @@
 
 Terraform is a tool made by Hashicorp for building, changing, and versioning infrastructure safely and efficiently. Terraform can manage existing and popular service providers ( aws, azure, Google cloud) as well as custom in-house solutions.
 
-**Development, Test, QA, and Production Environments**
+**Development, Test/QA, and Production Environments**
 
 A QA environment is where you test your upgrade procedure against data, hardware, and software that closely simulate the Production environment and where you allow intended users to test the resulting Waveset application.
 

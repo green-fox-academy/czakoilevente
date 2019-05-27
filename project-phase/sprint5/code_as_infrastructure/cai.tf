@@ -16,6 +16,23 @@ resource "aws_instance" "example" {
    Name = "mallac-lev-staging-example"
   }
 
+  connection {
+    type = "ssh"
+    user = "ec2-user"
+    private_key = "${file("./mallachite-lev.pem")}"
+  }
+
+  provisioner "file" {
+    source      = "script.sh"
+    destination = "/tmp/script.sh"
+  }
+
+  provisioner "remote-exec" {
+    inline = [
+      "chmod +x /tmp/script.sh",
+      "/tmp/script.sh args",
+    ]
+  }
 
 
 

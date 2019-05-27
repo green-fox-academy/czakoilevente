@@ -13,7 +13,8 @@ In this repository I created the following blocks in the `instance.tf` file:
  * connections: to use ssh connection and be able to use password to log in as `developer user`
  
  ```
- NOTE: Creation of 'developer' user is set in script.sh file and commited during the terraform build process.
+ NOTE: Creation of 'developer' user is set in script.sh file and 
+ commited during the terraform build process.
  ```
  
  [File contents here](https://github.com/green-fox-academy/czakoilevente/tree/master/project-phase/sprint5/Securing_EC2_Computers)

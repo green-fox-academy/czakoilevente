@@ -31,7 +31,7 @@ resource "aws_security_group" "ec2-allow-ssh" {
 
 resource "aws_instance" "securing" {
   ami           = "ami-656be372"
-  instance_type = "t1.micro"
+  instance_type = "t2.micro"
 
   tags {
     Name = "mallac-lev-securing_ec2_instance"

@@ -1,6 +1,8 @@
 variable "access_key-aws" {}
 variable "secret_key-aws" {}
 variable "region-aws" {}
+variable "dev-ssh" {}
+
 
 provider "aws" {
   access_key = "${var.access_key-aws}"
@@ -11,32 +13,33 @@ provider "aws" {
 resource "aws_security_group" "ec2-allow-ssh" {
   name = "ec2-allow-ssh"
 
-    ingress {
+  ingress {
     from_port = 22
-    to_port = 22
-    
-    protocol = "tcp"
+    to_port   = 22
+
+    protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
-    egress {
-    from_port       = 0
-    to_port         = 0
-    protocol        = "-1"
-    cidr_blocks     = ["0.0.0.0/0"]
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
   }
 }
 
 resource "aws_instance" "securing" {
-  ami = "ami-656be372"
+  ami           = "ami-656be372"
   instance_type = "t1.micro"
-  
+
   tags {
-   Name = "mallac-lev-securing_ec2_instance"
+    Name = "mallac-lev-securing_ec2_instance"
   }
 
   connection {
-    type = "ssh"
-    user = "ec2-user"
+    type        = "ssh"
+    user        = "ec2-user"
     private_key = "${file("./mallachite-lev.pem")}"
   }
 
@@ -45,10 +48,16 @@ resource "aws_instance" "securing" {
     destination = ".script.sh"
   }
 
-    provisioner "remote-exec" {
+  provisioner "remote-exec" {
     inline = [
       "chmod +x /tmp/script.sh",
       "/tmp/script.sh args",
     ]
+  }
+
+  connection {
+    type     = "ssh"
+    user     = "developer"
+    password = "dev-ssh"
   }
 }

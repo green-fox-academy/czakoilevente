@@ -64,3 +64,6 @@ There is possibility of converting Terraform projects to Pulumi TypeScript progr
 
 Please read and follow through this easy guide linked above.
 
+#### Prerequisites to using tf2pulumi
+ 1. [install "GO"](https://golang.org/) - An open source programming language.
+ 2. [install "Dep"](https://github.com/golang/dep) - A dependency management tool for GO.

@@ -99,5 +99,13 @@ To start this service, you can:
 
 ### Migration - how to move application to different server
 
-Storage Transfer Service allows you to quickly import online data into Cloud Storage. You can also set up a repeating schedule for transferring data, as well as transfer data within Cloud Storage, from one bucket to another.
+Storage Transfer Service allows you to quickly import online data into Cloud Storage. You can also set up a repeating schedule for transferring data, as well as transfer data within Cloud Storage, from one bucket to another. 
 
+If you need more overview on this service, please visit [this site](https://cloud.google.com/storage-transfer/docs/overview)
+
+[This guide](https://cloud.google.com/storage-transfer/docs/how-to) will help you in the process of migrating your application through some steps like:
+ * Creating a client
+ * Configuring Access
+ * Setting up data transfer
+ 
+For API reference, check out [this guide](https://cloud.google.com/storage-transfer/docs/apis).

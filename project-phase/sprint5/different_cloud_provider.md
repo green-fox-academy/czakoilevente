@@ -15,9 +15,9 @@ data storage, data analytics and machine learning.
 
 Google Cloud Platform provides infrastructure as a service, platform as a service, and serverless computing environments.
 
-```
+
 Overview from different aspects [in this guide](https://cloud.google.com/docs/).
-```
+
 
 ---
 

@@ -38,6 +38,9 @@ should see something like this:
 
 <img src="assets/pulumi-install.png">
 
+Don't forget to restart your terminal in order to make pulumi work.
+If pulumi isn't found typing `$ pulumi version`, you'll have to add path manually.
+
 ---
 
 ## Setting up a project
@@ -54,7 +57,30 @@ According to it's official site Pulumi supports the follwing cloud services:
 
 ### New project
 
-To start your project using your choice of cloud provider, please [follow through this guide](https://pulumi.io/quickstart/) and select the corresponding provider from the menu on the left.
+1. To start your project using your choice of cloud provider, please [follow through this guide](https://pulumi.io/quickstart/) and select the corresponding provider from the menu on the left.
+
+OR
+
+2. You can use Pulumi CLI [following this guide](https://pulumi.io/reference/commands.html). 
+
+<br>
+
+#### setup with pulumi CLI
+
+1. Create a new project in a new/preferred folder.
+```
+$ pulumi new
+```
+This will guide you through the creation process.
+
+
+2. Access token - create an access token by copying link from terminal and loggin into pulumi. 
+Insert access token to terminal.
+
+<img src="assets/pulumi-access-token.xcf">
+
+3. 
+
 
 <br>
 

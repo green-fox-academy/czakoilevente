@@ -65,11 +65,39 @@ Google Compute Engine delivers virtual machines running in Google's innovative d
 With this service you can set up, maintain, manage, and administer your relational and server databases in the cloud.
 You can use Cloud SQL with either [MySQL](https://cloud.google.com/sql/docs/mysql/) or [PostgreSQL](https://cloud.google.com/sql/docs/postgres/). 
 
-To be able to select the database engin perfectly fit for your needs, [see this guide](https://cloud.google.com/products/storage/).
+To be able to select the database engine perfectly fit for your needs, [see this guide](https://cloud.google.com/products/storage/).
 
 All the features and capabilities of this service you can find in: [Cloud SQL Features](https://cloud.google.com/sql/docs/features).
 
 For launching a database first you might to see [this checklist](https://cloud.google.com/sql/docs/launch-checklist) 
 then checkout [this descriptive guide with screenshots](https://cloud.google.com/sql/docs/mysql/quickstart).
 
+---
+
+## Google Cloud Storage
+
+Google Cloud Storage is a unified object storage for developers and enterprises.
+
+What this service provides:
+ * Integrate storage into your apps with a single unified API
+ * Optimize price/performance across four storage classes with Object Lifecycle Management
+ * Access data instantly from any storage class
+ * Designed for secure and durable storage
+ * Reduce data storage carbon emissions to zero
+ 
+Use cases:
+ * Streaming videos and music
+ * Serving images and website content
+ * Mobile app development
+
+To start this service, you can:
+ 1. [follow the interactive guide](https://console.cloud.google.com/getting-started?tutorial=storage_quickstart)
+ 2. for advanced users, developers there is a [guide for console](https://cloud.google.com/storage/docs/quickstart-console)
+ 3. and there is [the gsutil tool](https://cloud.google.com/storage/docs/quickstart-gsutil).
+
+---
+
+### Migration - how to move application to different server
+
+Storage Transfer Service allows you to quickly import online data into Cloud Storage. You can also set up a repeating schedule for transferring data, as well as transfer data within Cloud Storage, from one bucket to another.
 

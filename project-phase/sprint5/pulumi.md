@@ -52,4 +52,4 @@ According to it's official site Pulumi supports the follwing cloud services:
  
  <br>
  
-To start your project using your choice of cloud provider, please [follow through this guide](https://pulumi.io/quickstart/).
+To start your project using your choice of cloud provider, please [follow through this guide](https://pulumi.io/quickstart/) and selec the corresponding provider from the menu on the left.

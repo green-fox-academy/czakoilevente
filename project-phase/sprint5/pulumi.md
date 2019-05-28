@@ -111,3 +111,20 @@ Please read and follow through this easy guide linked above.
 #### Prerequisites to using tf2pulumi
  1. [install "GO"](https://golang.org/) - An open source programming language.
  2. [install "Dep"](https://github.com/golang/dep) - A dependency management tool for GO.
+
+<br>
+
+### Remove
+
+You can destroy the stack by command:
+
+```
+$ pulumi stack rm
+
+```
+
+To delete your pulumi project, type command:
+
+```
+$ pulumi destroy
+```

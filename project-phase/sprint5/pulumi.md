@@ -20,7 +20,7 @@ using familiar languages and tools you already know.
 
 For the installation for MAC, Windows, manual install, please [visit this site](https://pulumi.io/quickstart/install.html). 
 
-**For Linux:
+**For Linux:**
 
 This will install the `Pulumi CLI` to `~/.pulumi/bin` and add it to your path:
 
@@ -52,4 +52,4 @@ According to it's official site Pulumi supports the follwing cloud services:
  
  <br>
  
-To start your project using your choice of cloud provider, please [follow through this guide](https://pulumi.io/quickstart/) and selec the corresponding provider from the menu on the left.
+To start your project using your choice of cloud provider, please [follow through this guide](https://pulumi.io/quickstart/) and select the corresponding provider from the menu on the left.

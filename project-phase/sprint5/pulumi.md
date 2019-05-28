@@ -79,8 +79,26 @@ Insert access token to terminal.
 
 <img src="assets/pulumi-access-token.png">
 
-3. 
+3. Select cloud and language.
 
+<img src="assets/pulumi-template.png">
+
+I'll go with "aws-javascript".
+
+4. Add `project name`, `project description`, `stack name`, `region`.
+After selection region, pulumi will install dependencies.
+
+<img src="assets/pulumi-depend.png">
+
+5. Deploying by command
+
+```
+$ pulumi up
+```
+
+To be able to deploy you will have to provide AWS credentials for pulumi.
+
+Check out the [setup guide](https://pulumi.io/quickstart/aws/setup.html).
 
 <br>
 

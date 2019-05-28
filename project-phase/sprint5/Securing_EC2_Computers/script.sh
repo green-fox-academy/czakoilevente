@@ -15,7 +15,7 @@ sudo apt-get update
 #install docker 
 sudo apt-get install docker-ce
 #install git
-sudo yum install -y git
+sudo apt-get install -y git
 #docker as a non-root user
 sudo groupadd docker
 sudo usermod -aG docker $USER
@@ -27,4 +27,8 @@ npm install
 npm install node --save
 #install express and add dependency in json
 npm install express --save
-
+#create 'developer' user
+useradd -s /bin/bash -m -d /home/developer developer
+echo "asdf" | passwd developer --stdin
+sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+service sshd restart

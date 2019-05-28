@@ -76,7 +76,7 @@ then checkout [this descriptive guide with screenshots](https://cloud.google.com
 
 ## Google Cloud Storage
 
-Google Cloud Storage is a unified object storage for developers and enterprises.
+[Google Cloud Storage](https://cloud.google.com/storage/) is a unified object storage for developers and enterprises.
 
 What this service provides:
  * Integrate storage into your apps with a single unified API

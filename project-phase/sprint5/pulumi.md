@@ -50,3 +50,6 @@ According to it's official site Pulumi supports the follwing cloud services:
  * [Google Cloud Platform](https://cloud.google.com/)
  * [OpenStack](https://www.openstack.org/)
  
+ <br>
+ 
+To start your project using your choice of cloud provider, please [follow through this guide](https://pulumi.io/quickstart/).

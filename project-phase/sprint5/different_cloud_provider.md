@@ -13,6 +13,7 @@ data storage, data analytics and machine learning.
 
 Google Cloud Platform provides infrastructure as a service, platform as a service, and serverless computing environments.
 
+Google is highly or madly focused about being super-easy, super-adaptive to scale so I won't highlight it in the descriptions of every Service, the company is simply one of the best if not the best in the world regarding this.
 
 Overview from different aspects [in this guide](https://cloud.google.com/docs/).
 
@@ -57,5 +58,13 @@ Google Compute Engine delivers virtual machines running in Google's innovative d
  
  ---
  
+## Cloud SQL 
 
- 
+[Cloud SQL](https://cloud.google.com/sql/) is a fully-managed database service.
+
+With this service you can set up, maintain, manage, and administer your relational and server databases in the cloud.
+You can use Cloud SQL with either: 
+[MySQL](https://cloud.google.com/sql/docs/mysql/) 
+or 
+[PostgreSQL](https://cloud.google.com/sql/docs/postgres/). 
+

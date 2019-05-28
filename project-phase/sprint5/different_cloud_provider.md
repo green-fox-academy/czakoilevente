@@ -4,8 +4,6 @@
 
 ## Google Cloud Platform
 
-<br>
-
 #### Wiki: 
 
 Google Cloud or Google Cloud Platform (GCP) is a suite of cloud computing services 
@@ -18,6 +16,7 @@ Google Cloud Platform provides infrastructure as a service, platform as a servic
 
 Overview from different aspects [in this guide](https://cloud.google.com/docs/).
 
+<br>
 
 ---
 
@@ -35,8 +34,6 @@ Google Compute Engine delivers virtual machines running in Google's innovative d
  * Scaling, Monitoring, Labeling recources
  
  ---
- 
- <br>
  
  ## Google App Engine
  
@@ -60,6 +57,5 @@ Google Compute Engine delivers virtual machines running in Google's innovative d
  
  ---
  
- <br>
- 
+
  

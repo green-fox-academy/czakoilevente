@@ -63,8 +63,13 @@ Google Compute Engine delivers virtual machines running in Google's innovative d
 [Cloud SQL](https://cloud.google.com/sql/) is a fully-managed database service.
 
 With this service you can set up, maintain, manage, and administer your relational and server databases in the cloud.
-You can use Cloud SQL with either: 
-[MySQL](https://cloud.google.com/sql/docs/mysql/) 
-or 
-[PostgreSQL](https://cloud.google.com/sql/docs/postgres/). 
+You can use Cloud SQL with either [MySQL](https://cloud.google.com/sql/docs/mysql/) or [PostgreSQL](https://cloud.google.com/sql/docs/postgres/). 
+
+To be able to select the database engin perfectly fit for your needs, [see this guide](https://cloud.google.com/products/storage/).
+
+All the features and capabilities of this service you can find in: [Cloud SQL Features](https://cloud.google.com/sql/docs/features).
+
+For launching a database first you might to see [this checklist](https://cloud.google.com/sql/docs/launch-checklist) 
+then checkout [this descriptive guide with screenshots](https://cloud.google.com/sql/docs/mysql/quickstart).
+
 

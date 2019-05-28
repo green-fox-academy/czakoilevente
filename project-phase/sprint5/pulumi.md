@@ -77,7 +77,7 @@ This will guide you through the creation process.
 2. Access token - create an access token by copying link from terminal and loggin into pulumi. 
 Insert access token to terminal.
 
-<img src="assets/pulumi-access-token.xcf">
+<img src="assets/pulumi-access-token.png">
 
 3. 
 

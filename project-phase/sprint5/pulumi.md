@@ -40,7 +40,7 @@ should see something like this:
 
 ---
 
-### Setting up a project
+## Setting up a project
 
 According to it's official site Pulumi supports the follwing cloud services:
  * [AWS](https://aws.amazon.com/)
@@ -51,5 +51,16 @@ According to it's official site Pulumi supports the follwing cloud services:
  * [OpenStack](https://www.openstack.org/)
  
  <br>
- 
+
+### New project
+
 To start your project using your choice of cloud provider, please [follow through this guide](https://pulumi.io/quickstart/) and select the corresponding provider from the menu on the left.
+
+<br>
+
+### Transforming - tf2pulumi
+
+There is possibility of converting Terraform projects to Pulumi TypeScript programs by using [tf2pulumi](https://github.com/pulumi/tf2pulumi).
+
+Please read and follow through this easy guide linked above.
+

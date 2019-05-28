@@ -6,7 +6,7 @@
 
 #### Wiki: 
 
-Google Cloud or Google Cloud Platform (GCP) is a suite of cloud computing services 
+[Google Cloud or Google Cloud Platform (GCP)](https://cloud.google.com/) is a suite of cloud computing services 
 that runs on the same infrastructure that Google uses internally for its end-user products.
 Alongside a set of management tools, it provides a series of modular cloud services including computing, 
 data storage, data analytics and machine learning.

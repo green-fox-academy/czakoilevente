@@ -132,3 +132,17 @@
     browser will display:
 
         Hello World!
+  
+  <br>
+  
+ ## Additional docker commands
+ 
+  - Log in on DockerHub
+  ```
+  $ docker login --username=yourDockerHubUsername --email=yourEmail@exampleProvider.com
+  ```
+ 
+  - Push docker image to DockerHub
+  ```
+  $ docker push yourDockerHubUsername/yourImageName
+  ```

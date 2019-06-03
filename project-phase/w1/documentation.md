@@ -146,3 +146,9 @@
   ```
   $ docker push yourDockerHubUsername/yourImageName
   ```
+
+  - Pull a docker image:
+  ```
+  $ docker pull [OPTIONS] NAME[:TAG|@DIGEST]
+  ```
+  

@@ -152,3 +152,23 @@
   $ docker pull [OPTIONS] NAME[:TAG|@DIGEST]
   ```
   
+### Set environment variables
+
+
+Quote: "... There’s a convenient ways to set the default values of an ENV variable inside of your Dockerfile, and get the value from a command-line argument when you’re building the image. The secret lies in combining the ENV and ARG directives. Your Dockerfile should contain something similar to the following two lines: ..."
+
+```
+ARG buildtime_variable=default_value
+
+ENV env_var_name=$buildtime_variable
+```
+
+When you’re building your image, you can override the default_value directly from the command line:
+
+```
+$ docker build --build-arg buildtime_variable=a_value # [...]
+```
+
+The value of the ARG variable will be overridden with the one you provided, and during the build the ENV value will be set to your provided value as well. Although the ARG variable will not be available to future containers, the passed ENV value will be there to be used. Once you run the container, you’ll have a default value for the environment variable, unless you choose to override it.
+
+[Source](https://vsupalov.com/docker-build-time-env-values/)

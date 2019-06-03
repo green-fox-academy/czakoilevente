@@ -262,7 +262,7 @@ A Docker data volume persists after a container is deleted. There are two types 
 
 <br>
 
-Remove anonymous volumes
+**Remove anonymous volumes**
 
 To automatically remove anonymous volumes, use the --rm option. For example, this command creates an anonymous /foo volume. 
 When the container is removed, the Docker Engine removes the /foo volume but not the awesome volume.
@@ -273,7 +273,7 @@ $ docker run --rm -v /foo -v awesome:/bar busybox top
 
 <br>
 
-Remove all volumes
+**Remove all volumes**
 
 To remove all unused volumes and free up space:
 

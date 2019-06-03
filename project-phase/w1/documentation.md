@@ -159,9 +159,9 @@
 ### Set environment variables
 
 
-Quote: "
+Quote: 
 
-...Environment variables are available to processes running inside of Docker containers. You can set a value inside of a Dockerfile using the ENV directive, or provide a dynamic value when launching a Docker container from an image, using the -e flag, an env_file or from your docker-compose.yml file. ...
+"... Environment variables are available to processes running inside of Docker containers. You can set a value inside of a Dockerfile using the ENV directive, or provide a dynamic value when launching a Docker container from an image, using the -e flag, an env_file or from your docker-compose.yml file. ...
 
 ... There’s a convenient ways to set the default values of an ENV variable inside of your Dockerfile, and get the value from a command-line argument when you’re building the image. The secret lies in combining the ENV and ARG directives. Your Dockerfile should contain something similar to the following two lines: ..."
 

@@ -180,3 +180,24 @@ $ docker build --build-arg buildtime_variable=a_value # [...]
 The value of the ARG variable will be overridden with the one you provided, and during the build the ENV value will be set to your provided value as well. Although the ARG variable will not be available to future containers, the passed ENV value will be there to be used. Once you run the container, you’ll have a default value for the environment variable, unless you choose to override it.
 
 [Source](https://vsupalov.com/docker-build-time-env-values/)
+
+<br>
+
+### Using volumes
+
+
+  - Create a volume:
+```
+$ docker volume create my-vol
+```
+
+  - List volumes:
+```
+$ docker volume ls
+```
+
+  - Inspect a volume:
+```
+$ docker volume inspect my-vol
+```
+

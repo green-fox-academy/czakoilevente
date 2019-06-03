@@ -185,26 +185,59 @@ The value of the ARG variable will be overridden with the one you provided, and 
 
 ### Using volumes
 
+#### Local volumes
 
   - Create a volume:
 ```
 $ docker volume create my-vol
 ```
-
   - List volumes:
 ```
 $ docker volume ls
 ```
-
   - Inspect a volume:
 ```
 $ docker volume inspect my-vol
 ```
-
   - Start a container with a volume
 ```
 $  $ docker run -d -mount source=my-vol,target=/app
 ```
 
 *This command creates the volume for you `my-vol` into `/app/` in the container.*
+  
+<br>
+
+
+#### Volumes on remote host (using `volume drivers`)
+
+a Docker host connects to the second using SSH
+
+  -  Install the `vieux/sshfs` plugin on the Docker host:
+```
+$ docker plugin install --grant-all-permissions vieux/sshfs
+```
+
+  - Create a volume using a volume driver
+```
+$ docker volume create --driver vieux/sshfs \
+  -o sshcmd=test@node2:/home/test \
+  -o password=testpassword \
+  sshvolume
+  ```
+  
+  - Start a container which creates a volume using a volume driver
+
+```
+$ docker run -d \
+  --name sshfs-container \
+  --volume-driver vieux/sshfs \
+  --mount src=sshvolume,target=/app,volume-opt=sshcmd=test@node2:/home/test,volume-opt=password=testpassword \
+  nginx:latest
+```
+ 
+<br>
+
+#### Volumes on cloud provider (using `volume drivers`)
+
   

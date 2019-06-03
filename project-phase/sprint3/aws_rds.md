@@ -40,13 +40,11 @@ If this is the first time to create database, you can just hit button "Create da
 
 Now you should see the databases listed in squares.
 
-Check if you are using free service.
+   - Check if you are using free service.
+   <img src="assets/aws-rds-free-use.png">
 
-<img src="assets/aws-rds-free-use.png">
-
-Select MySQL.
-
-Hit "Next".
+   - Select MySQL.
+   - Hit "Next".
 
 <br>
 

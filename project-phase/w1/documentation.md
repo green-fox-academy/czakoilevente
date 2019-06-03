@@ -201,3 +201,10 @@ $ docker volume ls
 $ docker volume inspect my-vol
 ```
 
+  - Start a container with a volume
+```
+$  $ docker run -d -mount source=my-vol,target=/app
+```
+
+*This command creates the volume for you `my-vol` into `/app/` in the container.*
+  

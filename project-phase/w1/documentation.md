@@ -248,6 +248,9 @@ You will have to set:
 
 Please [follow through this guide](https://docs.docker.com/registry/storage-drivers/s3/)
 
+
+<br>
+
    
 ### Remove volumes
 

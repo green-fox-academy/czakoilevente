@@ -12,18 +12,12 @@
 
 ## Create database
 
-Login to AWS Console
+   - Login to AWS Console
+   - It should display the AWS Management Console "dashboard".
+   - Type in the searchfield "Find Services":  
+``` rds ```
 
-It should display the AWS Management Console "dashboard".
-
-Type in the searchfield "Find Services":
-
-```
-rds
-
-```
-
-then hit Enter.
+   - hit "Enter".
 
 <br>
 

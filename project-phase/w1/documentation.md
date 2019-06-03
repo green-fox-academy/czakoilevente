@@ -209,7 +209,7 @@ $  $ docker run -d -mount source=my-vol,target=/app
 <br>
 
 
-#### Volumes on remote host (using `volume drivers`)
+#### Volumes on remote host (using `volume driver`)
 
 a Docker host connects to the second using SSH
 
@@ -238,6 +238,14 @@ $ docker run -d \
  
 <br>
 
-#### Volumes on cloud provider (using `volume drivers`)
+#### Volumes on cloud provider (using `storage driver`)
 
-  
+An implementation of the `storagedriver.StorageDriver` interface uses Amazon S3 or S3 compatible services for object storage can be used as cloud volumes.
+
+You will have to set:
+   - set parameters
+   - S3 permission scopes
+
+Please [follow through this guide](https://docs.docker.com/registry/storage-drivers/s3/)
+
+   

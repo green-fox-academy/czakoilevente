@@ -5,20 +5,20 @@ To install EB CLI to your computer for Window, macOS, Linux, or virtualenv, clic
 
 ## Get Access key and Secret access key
 
- - Log into aws console, go to IAM Dashboard.
+  - Log into aws console, go to IAM Dashboard.
    (in AWS Management Console type in the search bar: IAM)
 
- - Select Users menupoint in the left
- - Select preferred user
- - Go to Security credential tab
- - Hit `Create access key` button (pops new window with credentials) 
+  - Select Users menupoint in the left
+  - Select preferred user
+  - Go to Security credential tab
+  - Hit `Create access key` button (pops new window with credentials) 
 
 
 ## Set up your application
 
- - Create new folder for your EB
- - Enter into the folder
- - To start application, use command
+  - Create new folder for your EB
+  - Enter into the folder
+  - To start application, use command
 
 ```$ eb init ```
 

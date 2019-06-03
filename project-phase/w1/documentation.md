@@ -137,6 +137,8 @@
   
  ## Additional docker commands
  
+   <br>
+   
   - Log in on DockerHub
   ```
   $ docker login --username=yourDockerHubUsername --email=yourEmail@exampleProvider.com
@@ -151,7 +153,9 @@
   ```
   $ docker pull [OPTIONS] NAME[:TAG|@DIGEST]
   ```
-  
+
+  <br>
+
 ### Set environment variables
 
 

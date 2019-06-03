@@ -249,3 +249,31 @@ You will have to set:
 Please [follow through this guide](https://docs.docker.com/registry/storage-drivers/s3/)
 
    
+### Remove volumes
+
+A Docker data volume persists after a container is deleted. There are two types of volumes to consider:
+
+  - **Named volumes** have a specific source from outside the container, for example awesome:/bar.
+
+  - **Anonymous volumes** have no specific source so when the container is deleted, instruct the Docker Engine daemon to remove them.
+
+<br>
+
+Remove anonymous volumes
+
+To automatically remove anonymous volumes, use the --rm option. For example, this command creates an anonymous /foo volume. 
+When the container is removed, the Docker Engine removes the /foo volume but not the awesome volume.
+
+```
+$ docker run --rm -v /foo -v awesome:/bar busybox top
+```
+
+<br>
+
+Remove all volumes
+
+To remove all unused volumes and free up space:
+
+```
+$ docker volume prune
+```
